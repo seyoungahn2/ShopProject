@@ -12,7 +12,10 @@ data/*.db
 data/cache/
 reports/*.md
 reports/*.html
+reports/*.csv
+reports/*.xlsx
 !reports/.gitkeep
+credentials/
 !data/.gitkeep
 .pytest_cache/
 .ruff_cache/

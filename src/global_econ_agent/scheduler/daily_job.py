@@ -14,7 +14,7 @@ def run_scheduled_job() -> None:
     """스케줄러에서 호출되는 일일 작업."""
     logger.info("스케줄된 일일 작업 시작")
     agent = GlobalEconAgent()
-    report = agent.run_daily_pipeline()
+    report, _outputs = agent.run_daily_pipeline()
     logger.info("스케줄된 작업 완료: %s", report.report_date)
 
 

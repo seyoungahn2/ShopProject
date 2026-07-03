@@ -58,4 +58,8 @@ analysis:
 report:
   title_template: "글로벌 경제 시나리오 보고서 - {date}"
   include_sources: true
-  format: "markdown"
+  # 저장 형식: markdown, xlsx, csv (복수 선택 가능)
+  formats: ["markdown", "xlsx", "csv"]
+  language: "ko"
+  # 원어 용어에 한글 해석 자동 병기
+  include_term_glossary: true

@@ -32,6 +32,12 @@ class ImpactLevel(str, Enum):
     LOW = "low"
 
 
+class TermGlossary(BaseModel):
+    """원어 용어와 한글 해석."""
+    term: str
+    meaning_ko: str
+
+
 class Article(BaseModel):
     id: Optional[str] = None
     title: str
@@ -49,7 +55,8 @@ class Article(BaseModel):
 
 class ImpactAnalysis(BaseModel):
     article_id: str
-    title: str
+    title_ko: str
+    title_original: str = ""
     categories: list[Category]
     regions_affected: list[Region]
     impact_level: ImpactLevel
@@ -59,11 +66,17 @@ class ImpactAnalysis(BaseModel):
     affected_sectors: list[str] = Field(default_factory=list)
     affected_companies: list[str] = Field(default_factory=list)
     summary_ko: str
+    term_glossary: list[TermGlossary] = Field(default_factory=list)
+
+    @property
+    def title(self) -> str:
+        """하위 호환용 — 한글 제목 우선."""
+        return self.title_ko or self.title_original
 
 
 class Scenario(BaseModel):
     name: str
-    probability: str  # e.g. "35%"
+    probability: str
     description: str
     triggers: list[str] = Field(default_factory=list)
     us_market_outlook: str
@@ -72,6 +85,7 @@ class Scenario(BaseModel):
     rate_outlook: str
     key_risks: list[str] = Field(default_factory=list)
     investment_implications: str
+    term_glossary: list[TermGlossary] = Field(default_factory=list)
 
 
 class DailyReport(BaseModel):
@@ -80,6 +94,7 @@ class DailyReport(BaseModel):
     executive_summary: str
     key_issues: list[ImpactAnalysis] = Field(default_factory=list)
     scenarios: list[Scenario] = Field(default_factory=list)
+    term_glossary: list[TermGlossary] = Field(default_factory=list)
     market_snapshot: dict = Field(default_factory=dict)
     articles_collected: int = 0
     articles_analyzed: int = 0

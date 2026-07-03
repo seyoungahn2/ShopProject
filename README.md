@@ -12,6 +12,8 @@
 | **이슈 분류** | 정치, 경제, 금리, 전쟁, 원자재, 환율, 무역, 재난, 테러 등 10개 카테고리 |
 | **영향 분석** | AI가 주식·채권·금리 전망 및 관련 섹터/기업 영향 분석 |
 | **시나리오 보고서** | 낙관/기준/비관 시나리오와 투자 시사점 자동 생성 |
+| **한글 보고서** | 본문은 한국어, 원어 용어는 해석 병기 |
+| **다양한 저장 형식** | Markdown, Excel, CSV, Google Sheets |
 | **일일 스케줄** | 매일 지정 시각에 자동 실행 (cron/APScheduler) |
 
 ## 커버리지
@@ -63,14 +65,63 @@ global-econ schedule
 
 ### 4. 보고서 확인
 
-생성된 보고서는 `reports/report_YYYY-MM-DD.md`에 저장됩니다.
+실행 후 `reports/` 폴더에 아래 형식으로 저장됩니다.
+
+| 형식 | 파일 | 용도 |
+|------|------|------|
+| **Markdown** | `report_YYYY-MM-DD.md` | 읽기 편한 한글 보고서 |
+| **Excel** | `report_YYYY-MM-DD.xlsx` | 시트별 정리 (요약/핵심이슈/시나리오/용어해석) |
+| **CSV** | `report_YYYY-MM-DD.csv` | 구글 시트 가져오기에 적합 |
+
+### 5. 구글 드라이브 / 스프레드시트 연동
+
+**방법 A — Excel/CSV 업로드 (가장 간단)**
+
+1. `global-econ run` 실행
+2. `reports/report_YYYY-MM-DD.xlsx` 또는 `.csv`를 구글 드라이브에 업로드
+3. "Google 스프레드시트로 열기" 선택
+
+**방법 B — Google Sheets 자동 업로드**
+
+```bash
+pip install -e ".[google]"
+```
+
+1. [Google Cloud Console](https://console.cloud.google.com/)에서 서비스 계정 생성
+2. Google Sheets API + Drive API 활성화
+3. JSON 키를 `credentials/google-service-account.json`에 저장
+4. 구글 스프레드시트를 만들고 서비스 계정 이메일을 **편집자**로 공유
+5. `.env` 설정:
+
+```env
+GOOGLE_SHEETS_ENABLED=true
+GOOGLE_SERVICE_ACCOUNT_JSON=./credentials/google-service-account.json
+GOOGLE_SPREADSHEET_ID=스프레드시트_ID
+```
+
+이후 `global-econ run` 시 날짜별 시트가 자동으로 추가됩니다.
+
+## 보고서 언어 규칙
+
+- **본문**: 모두 한국어
+- **원어 용어**: Fed, FOMC, KOSPI 등은 원문 유지
+- **용어 해석**: 각 이슈·시나리오·보고서 말미에 `원어 → 한글 해석` 자동 병기
+
+예시:
+```
+연준(Fed)이 FOMC 회의에서 금리를 동결했습니다.
+
+용어 해석:
+- Fed: 연방준비제도 — 미국 중앙은행
+- FOMC: 연방공개시장위원회 — 미국 금리를 결정하는 기구
+```
 
 ## 아키텍처
 
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐    ┌──────────────┐
 │  Collectors │───▶│  Processors  │───▶│  Analyzers  │───▶│   Reporter   │
-│  RSS/NewsAPI│    │ Classify/Dedup│    │ Impact/Scene│    │  Markdown    │
+│  RSS/NewsAPI│    │ Classify/Dedup│    │ Impact/Scene│    │ MD/XLSX/CSV  │
 └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
        │                  │                   │                   │
        └──────────────────┴───────────────────┴───────────────────┘

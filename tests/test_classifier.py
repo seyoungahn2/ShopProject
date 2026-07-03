@@ -85,4 +85,5 @@ def test_fallback_analysis_without_api_key():
     ]
     results = analyzer.analyze_articles(articles, top_n=1)
     assert len(results) == 1
+    assert results[0].title_ko
     assert results[0].stock_impact

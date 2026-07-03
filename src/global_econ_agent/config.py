@@ -25,11 +25,23 @@ class Settings(BaseSettings):
     schedule_minute: int = 0
     timezone: str = "Asia/Seoul"
 
+    # 보고서 출력 형식: markdown, xlsx, csv (쉼표 구분)
+    report_formats: str = "markdown,xlsx,csv"
+
+    # Google Sheets (선택)
+    google_sheets_enabled: bool = False
+    google_service_account_json: Path = Path("./credentials/google-service-account.json")
+    google_spreadsheet_id: str = ""
+    google_drive_folder_id: str = ""
+
     project_root: Path = Field(default_factory=lambda: Path(__file__).resolve().parents[2])
 
     def ensure_dirs(self) -> None:
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.reports_dir.mkdir(parents=True, exist_ok=True)
+
+    def get_report_formats(self) -> list[str]:
+        return [f.strip() for f in self.report_formats.split(",") if f.strip()]
 
     @property
     def db_path(self) -> Path:

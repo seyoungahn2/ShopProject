@@ -1,5 +1,4 @@
 import logging
-from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
@@ -11,6 +10,7 @@ from rich.table import Table
 from global_econ_agent import __version__
 from global_econ_agent.agent import GlobalEconAgent
 from global_econ_agent.config import get_settings
+from global_econ_agent.reporters.outputs import ReportOutputs
 from global_econ_agent.scheduler.daily_job import start_scheduler
 
 app = typer.Typer(
@@ -50,12 +50,14 @@ def run(
 
     settings = get_settings()
     if not settings.openai_api_key:
-        console.print("[yellow]⚠ OPENAI_API_KEY 미설정 — 규칙 기반 분석으로 동작합니다.[/yellow]")
+        console.print(
+            "[yellow]⚠ OPENAI_API_KEY 미설정 — 규칙 기반 분석으로 동작합니다.[/yellow]\n"
+            "[dim]한글 상세 분석·용어 해석은 API 키 설정 시 품질이 크게 향상됩니다.[/dim]"
+        )
 
     agent = GlobalEconAgent(settings)
-    report = agent.run_daily_pipeline(date)
-
-    _print_report_summary(report, settings.reports_dir)
+    report, outputs = agent.run_daily_pipeline(date)
+    _print_report_summary(report, outputs)
 
 
 @app.command()
@@ -86,8 +88,8 @@ def analyze(
     """저장된 기사 기반 분석 및 보고서 생성."""
     console.print("[bold]AI 분석 시작...[/bold]")
     agent = GlobalEconAgent()
-    report = agent.analyze_existing(date)
-    _print_report_summary(report, get_settings().reports_dir)
+    report, outputs = agent.analyze_existing(date)
+    _print_report_summary(report, outputs)
 
 
 @app.command(name="schedule")
@@ -118,20 +120,26 @@ def status() -> None:
     table.add_row("버전", __version__)
     table.add_row("DB 경로", str(settings.db_path))
     table.add_row("보고서 경로", str(settings.reports_dir))
+    table.add_row("출력 형식", ", ".join(settings.get_report_formats()))
     table.add_row("OpenAI API", "✓ 설정됨" if settings.openai_api_key else "✗ 미설정")
     table.add_row("NewsAPI", "✓ 설정됨" if settings.newsapi_key else "✗ 미설정")
+    table.add_row(
+        "Google Sheets",
+        "✓ 설정됨" if settings.google_sheets_enabled and settings.google_spreadsheet_id else "✗ 미설정",
+    )
     table.add_row("최근 48h 기사", f"{len(articles)}건+")
     table.add_row("스케줄", f"{settings.schedule_hour:02d}:{settings.schedule_minute:02d} {settings.timezone}")
     console.print(table)
 
 
-def _print_report_summary(report, reports_dir: Path) -> None:
+def _print_report_summary(report, outputs: ReportOutputs) -> None:
     console.print()
     console.print(Panel.fit(
         f"[bold green]보고서 생성 완료[/bold green]\n\n"
         f"날짜: {report.report_date}\n"
         f"수집: {report.articles_collected}건 | 분석: {report.articles_analyzed}건\n"
-        f"핵심 이슈: {len(report.key_issues)}건 | 시나리오: {len(report.scenarios)}개",
+        f"핵심 이슈: {len(report.key_issues)}건 | 시나리오: {len(report.scenarios)}개\n"
+        f"용어 해석: {len(report.term_glossary)}개",
         border_style="green",
     ))
 
@@ -139,15 +147,16 @@ def _print_report_summary(report, reports_dir: Path) -> None:
         table = Table(title="주요 이슈")
         table.add_column("#", style="dim")
         table.add_column("영향도")
-        table.add_column("제목")
+        table.add_column("한글 제목")
         for i, issue in enumerate(report.key_issues[:5], 1):
             emoji = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(issue.impact_level.value, "⚪")
-            table.add_row(str(i), emoji, issue.title[:50])
+            table.add_row(str(i), emoji, issue.title_ko[:50])
         console.print(table)
 
-    report_path = reports_dir / f"report_{report.report_date}.md"
-    if report_path.exists():
-        console.print(f"\n📄 보고서: [underline]{report_path}[/underline]")
+    if outputs.summary_lines():
+        console.print("\n[bold]저장된 보고서:[/bold]")
+        for line in outputs.summary_lines():
+            console.print(f"  {line}")
 
 
 if __name__ == "__main__":
