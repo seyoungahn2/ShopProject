@@ -1,0 +1,65 @@
+agent:
+  name: "Global Econ Intelligence Agent"
+  version: "0.1.0"
+  language: "ko"
+
+regions:
+  - code: US
+    name: "미국"
+    markets: ["S&P 500", "NASDAQ", "US Treasury"]
+    currencies: ["USD"]
+  - code: KR
+    name: "한국"
+    markets: ["KOSPI", "KOSDAQ", "Korean Treasury"]
+    currencies: ["KRW", "USD/KRW"]
+  - code: JP
+    name: "일본"
+    markets: ["Nikkei 225", "TOPIX", "JGB"]
+    currencies: ["JPY", "USD/JPY"]
+
+categories:
+  - id: politics
+    name: "정치"
+    keywords: ["election", "policy", "government", "congress", "parliament", "정치", "총선", "대선"]
+  - id: economy
+    name: "경제"
+    keywords: ["GDP", "inflation", "employment", "recession", "경제", "물가", "고용"]
+  - id: interest_rates
+    name: "금리"
+    keywords: ["Fed", "FOMC", "rate cut", "rate hike", "BOJ", "BOK", "금리", "기준금리", "연준"]
+  - id: conflict
+    name: "전쟁/분쟁"
+    keywords: ["war", "conflict", "military", "sanction", "전쟁", "분쟁", "제재"]
+  - id: commodities
+    name: "원자재"
+    keywords: ["oil", "gold", "copper", "LNG", "원유", "금", "원자재", "에너지"]
+  - id: fx
+    name: "환율"
+    keywords: ["dollar", "yen", "won", "forex", "exchange rate", "환율", "달러", "엔화", "원화"]
+  - id: trade
+    name: "무역"
+    keywords: ["tariff", "export", "import", "trade war", "무역", "관세", "수출", "수입"]
+  - id: disaster
+    name: "재난/재해"
+    keywords: ["earthquake", "flood", "typhoon", "disaster", "지진", "태풍", "재해", "재난"]
+  - id: terrorism
+    name: "테러/안보"
+    keywords: ["terror", "attack", "security", "테러", "안보", "사이버"]
+  - id: corporate
+    name: "기업/주가"
+    keywords: ["earnings", "IPO", "merger", "stock", "실적", "주가", "기업"]
+
+analysis:
+  max_articles_per_run: 80
+  top_issues_count: 15
+  scenario_count: 3
+  impact_horizons: ["단기(1-4주)", "중기(1-3개월)", "장기(6-12개월)"]
+
+report:
+  title_template: "글로벌 경제 시나리오 보고서 - {date}"
+  include_sources: true
+  # 저장 형식: markdown, xlsx, csv (복수 선택 가능)
+  formats: ["markdown", "xlsx", "csv"]
+  language: "ko"
+  # 원어 용어에 한글 해석 자동 병기
+  include_term_glossary: true
