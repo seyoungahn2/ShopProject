@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "global-econ-agent"
+version = "0.1.0"
+description = "글로벌 경제 이슈 수집·분석·시나리오 보고서 자동 생성 AI 에이전트"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "feedparser>=6.0.11",
+    "httpx>=0.27.0",
+    "openai>=1.40.0",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "python-dotenv>=1.0.1",
+    "pyyaml>=6.0.1",
+    "rich>=13.7.0",
+    "sqlalchemy>=2.0.30",
+    "apscheduler>=3.10.4",
+    "typer>=0.12.3",
+    "jinja2>=3.1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.7",
+    "ruff>=0.4.8",
+]
+
+[project.scripts]
+global-econ = "global_econ_agent.main:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

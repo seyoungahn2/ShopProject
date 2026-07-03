@@ -1,0 +1,108 @@
+# RSS 및 뉴스 소스 설정
+# enabled: false로 비활성화 가능
+
+sources:
+  # === 미국 ===
+  - id: reuters_business
+    name: "Reuters Business"
+    region: US
+    type: rss
+    url: "https://feeds.reuters.com/reuters/businessNews"
+    enabled: true
+    priority: 1
+
+  - id: fed_news
+    name: "Federal Reserve News"
+    region: US
+    type: rss
+    url: "https://www.federalreserve.gov/feeds/press_all.xml"
+    enabled: true
+    priority: 1
+
+  - id: cnbc_top
+    name: "CNBC Top News"
+    region: US
+    type: rss
+    url: "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"
+    enabled: true
+    priority: 2
+
+  # === 한국 ===
+  - id: yonhap_economy
+    name: "연합뉴스 경제"
+    region: KR
+    type: rss
+    url: "https://www.yna.co.kr/rss/economy.xml"
+    enabled: true
+    priority: 1
+
+  - id: hankyung
+    name: "한국경제"
+    region: KR
+    type: rss
+    url: "https://www.hankyung.com/feed/economy"
+    enabled: true
+    priority: 2
+
+  - id: mk_economy
+    name: "매일경제"
+    region: KR
+    type: rss
+    url: "https://www.mk.co.kr/rss/30000041/"
+    enabled: true
+    priority: 2
+
+  # === 일본 ===
+  - id: nikkei_asia
+    name: "Nikkei Asia"
+    region: JP
+    type: rss
+    url: "https://asia.nikkei.com/rss"
+    enabled: true
+    priority: 1
+
+  - id: japantimes_business
+    name: "Japan Times Business"
+    region: JP
+    type: rss
+    url: "https://www.japantimes.co.jp/feed/topstories/"
+    enabled: true
+    priority: 2
+
+  # === 글로벌 ===
+  - id: bbc_business
+    name: "BBC Business"
+    region: GLOBAL
+    type: rss
+    url: "https://feeds.bbci.co.uk/news/business/rss.xml"
+    enabled: true
+    priority: 1
+
+  - id: ft_world
+    name: "Financial Times World"
+    region: GLOBAL
+    type: rss
+    url: "https://www.ft.com/world?format=rss"
+    enabled: true
+    priority: 1
+
+# NewsAPI 쿼리 (NEWSAPI_KEY 설정 시 사용)
+newsapi_queries:
+  - query: "(Federal Reserve OR FOMC OR interest rate) AND (US OR America)"
+    region: US
+    category: interest_rates
+  - query: "(KOSPI OR Bank of Korea OR 한국은행) AND Korea"
+    region: KR
+    category: economy
+  - query: "(Nikkei OR Bank of Japan OR BOJ) AND Japan"
+    region: JP
+    category: economy
+  - query: "(oil OR gold OR commodity OR OPEC)"
+    region: GLOBAL
+    category: commodities
+  - query: "(trade war OR tariff OR sanctions)"
+    region: GLOBAL
+    category: trade
+  - query: "(war OR conflict OR military OR geopolitical)"
+    region: GLOBAL
+    category: conflict
