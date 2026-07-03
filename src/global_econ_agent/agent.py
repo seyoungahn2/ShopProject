@@ -5,9 +5,10 @@ from pathlib import Path
 import yaml
 
 from global_econ_agent.analyzers.impact_analyzer import ImpactAnalyzer, ScenarioGenerator
+from global_econ_agent.analyzers.research_composer import ResearchReportComposer
 from global_econ_agent.collectors import collect_all
 from global_econ_agent.config import Settings, get_settings
-from global_econ_agent.models.schemas import Article, DailyReport
+from global_econ_agent.models.schemas import Article, DailyReport, ResearchReportSections
 from global_econ_agent.processors.classifier import ArticleClassifier, ArticleDeduplicator
 from global_econ_agent.reporters.google_sheets_exporter import GoogleSheetsExporter
 from global_econ_agent.reporters.outputs import ReportOutputs
@@ -28,6 +29,7 @@ class GlobalEconAgent:
         self.deduplicator = ArticleDeduplicator()
         self.impact_analyzer = ImpactAnalyzer(self.settings)
         self.scenario_generator = ScenarioGenerator(self.settings)
+        self.research_composer = ResearchReportComposer(self.settings)
         self.report_builder = ReportBuilder(
             self.settings.reports_dir,
             formats=self._resolve_report_formats(),
@@ -86,9 +88,18 @@ class GlobalEconAgent:
                     self.db.update_article(article)
                     break
 
-        logger.info("[5/5] 시나리오 보고서 생성 중...")
+        logger.info("[5/6] 시나리오 분석 중...")
         executive_summary, scenarios, term_glossary = self.scenario_generator.generate(
             key_issues, self.scenario_count
+        )
+
+        logger.info("[6/6] 전문 리서치 보고서 작성 중...")
+        research = self.research_composer.compose(
+            report_date=report_date,
+            executive_summary=executive_summary,
+            key_issues=key_issues,
+            scenarios=scenarios,
+            articles_collected=articles_collected,
         )
 
         report = DailyReport(
@@ -97,6 +108,7 @@ class GlobalEconAgent:
             key_issues=key_issues,
             scenarios=scenarios,
             term_glossary=term_glossary,
+            research=research,
             articles_collected=articles_collected,
             articles_analyzed=len(key_issues),
         )
@@ -137,6 +149,10 @@ class GlobalEconAgent:
             report = DailyReport(
                 report_date=report_date,
                 executive_summary="수집된 기사가 없습니다.",
+                research=ResearchReportSections(
+                    investment_summary="수집된 기사가 없어 리서치 보고서를 작성할 수 없습니다.",
+                    conclusion="먼저 `global-econ collect` 또는 `global-econ run`을 실행하세요.",
+                ),
             )
             outputs = self._export_report(report)
             return report, outputs
@@ -146,12 +162,21 @@ class GlobalEconAgent:
             key_issues, self.scenario_count
         )
 
+        research = self.research_composer.compose(
+            report_date=report_date,
+            executive_summary=executive_summary,
+            key_issues=key_issues,
+            scenarios=scenarios,
+            articles_collected=len(articles),
+        )
+
         report = DailyReport(
             report_date=report_date,
             executive_summary=executive_summary,
             key_issues=key_issues,
             scenarios=scenarios,
             term_glossary=term_glossary,
+            research=research,
             articles_collected=len(articles),
             articles_analyzed=len(key_issues),
         )

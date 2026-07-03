@@ -88,6 +88,27 @@ class Scenario(BaseModel):
     term_glossary: list[TermGlossary] = Field(default_factory=list)
 
 
+class ResearchReportSections(BaseModel):
+    """전문 리서치 보고서 본문 섹션 (서술형)."""
+    report_title: str = "글로벌 매크로 & 멀티에셋 투자 리서치"
+    subtitle: str = "Daily Strategy Note"
+    investment_summary: str = ""
+    key_takeaways: list[str] = Field(default_factory=list)
+    macro_overview: str = ""
+    us_analysis: str = ""
+    kr_analysis: str = ""
+    jp_analysis: str = ""
+    equity_outlook: str = ""
+    bond_outlook: str = ""
+    fx_outlook: str = ""
+    rate_outlook_section: str = ""
+    thematic_analysis: str = ""
+    scenario_analysis: str = ""
+    risk_assessment: str = ""
+    investment_strategy: str = ""
+    conclusion: str = ""
+
+
 class DailyReport(BaseModel):
     report_date: str
     generated_at: datetime = Field(default_factory=datetime.utcnow)
@@ -95,6 +116,7 @@ class DailyReport(BaseModel):
     key_issues: list[ImpactAnalysis] = Field(default_factory=list)
     scenarios: list[Scenario] = Field(default_factory=list)
     term_glossary: list[TermGlossary] = Field(default_factory=list)
+    research: ResearchReportSections = Field(default_factory=ResearchReportSections)
     market_snapshot: dict = Field(default_factory=dict)
     articles_collected: int = 0
     articles_analyzed: int = 0
