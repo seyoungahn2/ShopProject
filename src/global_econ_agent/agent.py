@@ -1,4 +1,5 @@
 import logging
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -123,6 +124,8 @@ class GlobalEconAgent:
         if self.google_exporter.is_configured():
             outputs.google_sheets_url = self.google_exporter.export(report)
 
+        outputs = self._copy_to_accessible_locations(outputs)
+
         primary_path = (
             outputs.markdown
             or outputs.xlsx
@@ -132,6 +135,44 @@ class GlobalEconAgent:
         self.db.save_report(report, str(primary_path))
 
         return outputs
+
+    def _copy_to_accessible_locations(self, outputs: ReportOutputs) -> ReportOutputs:
+        """보고서를 바탕화면·프로젝트 루트 등 쉬운 위치에 복사."""
+        copy_targets = [
+            Path.home() / "Desktop" / "글로벌경제보고서",
+            self.settings.project_root / "글로벌경제보고서",
+        ]
+
+        copied: list[Path] = []
+        for target_dir in copy_targets:
+            target_dir.mkdir(parents=True, exist_ok=True)
+            for src in outputs.all_paths:
+                dest = target_dir / src.name
+                if src.resolve() == dest.resolve():
+                    copied.append(dest)
+                    continue
+                shutil.copy2(src, dest)
+                copied.append(dest)
+            self._write_location_readme(target_dir)
+
+        if copied:
+            logger.info("보고서 복사 완료: %s", copy_targets[0])
+
+        outputs.desktop_paths = copied
+        return outputs
+
+    def _write_location_readme(self, folder: Path) -> None:
+        readme = folder / "여기에_보고서가_있습니다.txt"
+        readme.write_text(
+            "글로벌 경제 리서치 보고서 저장 폴더\n\n"
+            f"폴더 경로: {folder.resolve()}\n\n"
+            "파일 설명:\n"
+            "- report_YYYY-MM-DD.md   → 읽기용 보고서 (Markdown)\n"
+            "- report_YYYY-MM-DD.xlsx → 엑셀/구글 시트용\n"
+            "- report_YYYY-MM-DD.csv  → CSV\n\n"
+            "새 보고서 생성: global-econ run\n",
+            encoding="utf-8",
+        )
 
     def collect_only(self) -> list[Article]:
         articles = collect_all(self.settings)
