@@ -246,30 +246,12 @@ ISA는 **정부가 만든 3년짜리 절세 통**에 가깝습니다.
 
 ## 관련 회차
 
-본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
-
-### 본문에서 언급한 회차
+이전 글에서 다룬 내용을 다시 찾을 때 쓰세요.
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
-| 12 | 배우자 ISA부터 채우는 이유, 부부 납입 순서 | [읽기](https://mynews20482.tistory.com/12) |
-| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | [읽기](https://mynews20482.tistory.com/25) |
-| 35 | ISA 제도 변경 소식, 확정과 미확정을 구분하는 법 | [읽기](https://mynews20482.tistory.com/35) |
-| 41 | 주린이 첫해 ISA 체크리스트 | [읽기](https://mynews20482.tistory.com/41) |
-| 42 | 직장인 월급으로 ISA 채우는 납입표 예시 | [읽기](https://mynews20482.tistory.com/42) |
-| 44 | 월 1회 ISA 점검 루틴 | [읽기](https://mynews20482.tistory.com/44) |
-| 46 | ISA 3년 로드맵, 개설부터 만기까지 | [읽기](https://mynews20482.tistory.com/46) |
-| 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 | [읽기](https://mynews20482.tistory.com/48) |
 | 49 | ISA 시리즈 핵심 치트시트 | [읽기](https://mynews20482.tistory.com/49) |
 
-### 시리즈 처음 보시는 분
-
-- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
-- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
-- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
-- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
-- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

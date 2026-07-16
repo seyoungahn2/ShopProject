@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rebuild ## 관련 회차: every episode cited in the body gets a tistory link.
+# Clean forward episode teasers; rebuild ## 관련 회차 (past refs only).
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$DIR"
@@ -21,7 +21,7 @@ TITLES[13]="ISA에 배당 ETF를 넣는 사람들이 많은 이유"
 TITLES[14]="S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점"
 TITLES[15]="ISA 안전자산: 채권·RP·예금은 언제 쓰나"
 TITLES[16]="리츠(REITs)를 ISA에 담을 때 체크할 것"
-TITLES[17]="개별 배당주 vs 배당 ETF, ISA에서는 뭐가 편할까"
+TITLES[17]="개별 배당주 vs 배당 ETF, ISA에서는 뭐가 편할까?"
 TITLES[18]="초보용 ISA 포트폴리오 예시 3가지"
 TITLES[19]="적립식 vs 일시납, ISA 납입 방식 고르는 기준"
 TITLES[20]="ISA 리밸런싱, 얼마나 자주 손대면 될까"
@@ -56,69 +56,40 @@ TITLES[48]="조회수용 제목보다 중요한 ISA 글쓰기 기준"
 TITLES[49]="ISA 시리즈 핵심 치트시트"
 TITLES[50]="ISA 50화 총정리, 그리고 다음에 다룰 것"
 
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 for f in [0-9][0-9]-*.md; do
   [[ -f "$f" ]] || continue
-
   current=$(perl -ne 'print $1 if /^# .*?\((\d+)화\)/' "$f")
   [[ -n "$current" ]] || continue
 
-  next_ep=$((current + 1))
-  [[ $next_ep -le 50 ]] || next_ep=""
-
-  # Body = everything before ## 관련 회차 (includes enhancement blocks above it).
-  mapfile -t extra < <(
-    perl -0777 -e '
-      my ($current, $next, $file) = @ARGV;
-      open my $fh, "<", $file or die $!;
-      local $/;
-      my $body = <$fh>;
-      close $fh;
-      $body =~ s/## 관련 회차.*//s;
-      $body =~ s/^# .*?\n//;
-      my %refs;
-      while ($body =~ /(?<![0-9])(\d{1,2})화/g) {
-        my $n = $1 + 0;
-        next if $n < 1 || $n > 50;
-        next if $n == $current;
-        next if $next ne "" && $n == $next;
-        $refs{$n} = 1;
-      }
-      print join("\n", sort { $a <=> $b } keys %refs);
-    ' "$current" "$next_ep" "$f"
-  )
-
-  out="## 관련 회차\n\n"
-  out+="본문에서 **\"N화에서 말했듯\"**, **\"N화 참고\"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.\n\n"
+  mapfile -t extra < <(perl "$SCRIPT_DIR/clean-episode-refs.pl" "$f")
 
   if [[ ${#extra[@]} -gt 0 && -n "${extra[0]:-}" ]]; then
-    out+="### 본문에서 언급한 회차\n\n"
+    out="## 관련 회차\n\n"
+    out+="이전 글에서 다룬 내용을 다시 찾을 때 쓰세요.\n\n"
     out+="| 화 | 제목 | 바로가기 |\n| --- | --- | --- |\n"
     for n in "${extra[@]}"; do
       title="${TITLES[$n]:-ISA ${n}화}"
       out+="| ${n} | ${title} | [읽기](https://mynews20482.tistory.com/${n}) |\n"
     done
     out+="\n"
+  else
+    out=""
+    # remove entire ## 관련 회차 section if no past refs
+    perl -0777 -i -pe 's/## 관련 회차.*?(?=\n---\n\n※|\n※ 본)//s' "$f"
+    echo "updated $f (ep $current, refs: none — section removed)"
+    continue
   fi
-
-  if [[ -n "$next_ep" ]]; then
-    title="${TITLES[$next_ep]}"
-    out+="### 다음 화\n\n"
-    out+="- [${next_ep}화: ${title}](https://mynews20482.tistory.com/${next_ep})\n\n"
-  fi
-
-  out+="### 시리즈 처음 보시는 분\n\n"
-  out+="- [1화: ${TITLES[1]}](https://mynews20482.tistory.com/1)\n"
-  out+="- [2화: ${TITLES[2]}](https://mynews20482.tistory.com/2)\n"
-  out+="- [3화: ${TITLES[3]}](https://mynews20482.tistory.com/3)\n"
-  out+="- [4화: ${TITLES[4]}](https://mynews20482.tistory.com/4)\n"
-  out+="- [49화: ${TITLES[49]}](https://mynews20482.tistory.com/49) (치트시트)\n"
 
   perl -0777 -i -pe "
     my \$new = qq{$out};
     if (/## 관련 회차/s) {
       s/## 관련 회차.*?(?=\n---\n\n※|\n※ 본)/\$new/s;
+    } elsif (/(\n---\n\n※|\n※ 본)/) {
+      s/(\n---\n\n※|\n※ 본)/\$new\$1/s;
     }
   " "$f"
 
-  echo "updated $f (ep $current, refs: ${extra[*]:-none})"
+  echo "updated $f (ep $current, refs: ${extra[*]})"
 done

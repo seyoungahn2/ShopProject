@@ -274,44 +274,19 @@ Q&A 답변은 **일반 정보**이며, 개별 사안은 전문가 상담이 필�
 3. 남은 궁금증은 **49화 치트시트**·해당 화수로 이어가면 됩니다.
 
 ---
-
-## 다음 화 예고
-
-다음 46화에서는 **개설부터 만기까지 3년 로드맵**을 타임라인으로 정리하겠습니다.
-
 ## 관련 회차
 
-본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
-
-### 본문에서 언급한 회차
+이전 글에서 다룬 내용을 다시 찾을 때 쓰세요.
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
 | 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
-| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
-| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
 | 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
-| 12 | 배우자 ISA부터 채우는 이유, 부부 납입 순서 | [읽기](https://mynews20482.tistory.com/12) |
-| 21 | 손익통산 실전 예시로 이해하기 | [읽기](https://mynews20482.tistory.com/21) |
 | 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
 | 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | [읽기](https://mynews20482.tistory.com/25) |
 | 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
 | 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
-| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
-| 39 | ISA 해지해도 되는 경우 / 절대 서두르면 안 되는 경우 | [읽기](https://mynews20482.tistory.com/39) |
-| 49 | ISA 시리즈 핵심 치트시트 | [읽기](https://mynews20482.tistory.com/49) |
 
-### 다음 화
-
-- [46화: ISA 3년 로드맵, 개설부터 만기까지](https://mynews20482.tistory.com/46)
-
-### 시리즈 처음 보시는 분
-
-- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
-- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
-- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
-- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
-- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

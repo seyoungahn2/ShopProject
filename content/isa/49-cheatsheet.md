@@ -292,42 +292,14 @@
 3. 치트시트는 **끝이 아니라 인덱스** — 50화 이후에도 열어 두셔도 됩니다.
 
 ---
-
-## 다음 화 예고
-
-다음 50화 — **시리즈 마지막 화**에서 1~50화를 돌아보고, **이후에 다룰 주제**로 이어가겠습니다.
-
 ## 관련 회차
 
-본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
-
-### 본문에서 언급한 회차
+이전 글에서 다룬 내용을 다시 찾을 때 쓰세요.
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
-| 28 | 금융소득종합과세와 ISA, 가입 제한 다시 정리 | [읽기](https://mynews20482.tistory.com/28) |
-| 31 | ISA 만기자금, 연금저축으로 갈까 IRP로 갈까 | [읽기](https://mynews20482.tistory.com/31) |
-| 33 | 연말 ISA 납입 타이밍, 12월에 몰아넣어도 되나 | [읽기](https://mynews20482.tistory.com/33) |
-| 41 | 주린이 첫해 ISA 체크리스트 | [읽기](https://mynews20482.tistory.com/41) |
-| 42 | 직장인 월급으로 ISA 채우는 납입표 예시 | [읽기](https://mynews20482.tistory.com/42) |
-| 43 | 내가 ISA에 실제로 담는 상품군 (운용 기록) | [읽기](https://mynews20482.tistory.com/43) |
-| 44 | 월 1회 ISA 점검 루틴 | [읽기](https://mynews20482.tistory.com/44) |
-| 46 | ISA 3년 로드맵, 개설부터 만기까지 | [읽기](https://mynews20482.tistory.com/46) |
-| 47 | 1인·가족 투자와 ISA, 계좌 역할 나누기 | [읽기](https://mynews20482.tistory.com/47) |
 | 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 | [읽기](https://mynews20482.tistory.com/48) |
 
-### 다음 화
-
-- [50화: ISA 50화 총정리, 그리고 다음에 다룰 것](https://mynews20482.tistory.com/50)
-
-### 시리즈 처음 보시는 분
-
-- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
-- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
-- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
-- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
-- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 
