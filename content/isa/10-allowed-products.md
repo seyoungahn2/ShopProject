@@ -249,10 +249,37 @@ ISA는 넓지만 무한하지 않습니다.
 
 ## 관련 회차
 
-- 1화: ISA 계좌 유형
-- 11화: 국내 상장 해외 ETF 대체
-- 13~16화: 상품군별 운용
-- 28화: 종합과세·가입 자격
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 3 | 가입 전 반드시 알아야 할 치명적인 함정 3가지 | [읽기](https://mynews20482.tistory.com/3) |
+| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
+| 12 | 배우자 ISA부터 채우는 이유, 부부 납입 순서 | [읽기](https://mynews20482.tistory.com/12) |
+| 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | [읽기](https://mynews20482.tistory.com/13) |
+| 14 | S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점 | [읽기](https://mynews20482.tistory.com/14) |
+| 15 | ISA 안전자산: 채권·RP·예금은 언제 쓰나 | [읽기](https://mynews20482.tistory.com/15) |
+| 16 | 리츠(REITs)를 ISA에 담을 때 체크할 것 | [읽기](https://mynews20482.tistory.com/16) |
+| 18 | 초보용 ISA 포트폴리오 예시 3가지 | [읽기](https://mynews20482.tistory.com/18) |
+| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | [읽기](https://mynews20482.tistory.com/25) |
+| 35 | ISA 제도 변경 소식, 확정과 미확정을 구분하는 법 | [읽기](https://mynews20482.tistory.com/35) |
+
+### 다음 화
+
+- [11화: 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법](https://mynews20482.tistory.com/11)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

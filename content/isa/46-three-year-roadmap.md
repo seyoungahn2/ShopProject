@@ -271,10 +271,41 @@ ISA는 복잡한 계좌가 아니라 **긴 호흡의 계좌**입니다.
 
 ## 관련 회차
 
-- **29화** — 풍차돌리기
-- **30~31화** — 연금 전환
-- **35화** — 제도 변경 필터
-- **49화** — 치트시트 숫자
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
+| 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
+| 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
+| 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
+| 31 | ISA 만기자금, 연금저축으로 갈까 IRP로 갈까 | [읽기](https://mynews20482.tistory.com/31) |
+| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
+| 33 | 연말 ISA 납입 타이밍, 12월에 몰아넣어도 되나 | [읽기](https://mynews20482.tistory.com/33) |
+| 34 | 일반형 → 서민형 전환, 서류와 타이밍 | [읽기](https://mynews20482.tistory.com/34) |
+| 35 | ISA 제도 변경 소식, 확정과 미확정을 구분하는 법 | [읽기](https://mynews20482.tistory.com/35) |
+| 39 | ISA 해지해도 되는 경우 / 절대 서두르면 안 되는 경우 | [읽기](https://mynews20482.tistory.com/39) |
+| 41 | 주린이 첫해 ISA 체크리스트 | [읽기](https://mynews20482.tistory.com/41) |
+| 42 | 직장인 월급으로 ISA 채우는 납입표 예시 | [읽기](https://mynews20482.tistory.com/42) |
+| 43 | 내가 ISA에 실제로 담는 상품군 (운용 기록) | [읽기](https://mynews20482.tistory.com/43) |
+| 44 | 월 1회 ISA 점검 루틴 | [읽기](https://mynews20482.tistory.com/44) |
+| 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 | [읽기](https://mynews20482.tistory.com/48) |
+| 49 | ISA 시리즈 핵심 치트시트 | [읽기](https://mynews20482.tistory.com/49) |
+
+### 다음 화
+
+- [47화: 1인·가족 투자와 ISA, 계좌 역할 나누기](https://mynews20482.tistory.com/47)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

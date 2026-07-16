@@ -258,10 +258,39 @@ ISA는 **일반 통장 감각**(인출 후 한도 복구, 해외 직접 매매)�
 
 ## 관련 회차
 
-- **8화** — 원금 중도인출
-- **30화** — 연금 전환 60일
-- **35화** — 루머 한도 필터
-- **41화** — 첫해 체크리스트
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | [읽기](https://mynews20482.tistory.com/6) |
+| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 10 | ISA에 넣을 수 있는 것 / 못 넣는 것 한눈에 정리 | [읽기](https://mynews20482.tistory.com/10) |
+| 28 | 금융소득종합과세와 ISA, 가입 제한 다시 정리 | [읽기](https://mynews20482.tistory.com/28) |
+| 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
+| 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
+| 33 | 연말 ISA 납입 타이밍, 12월에 몰아넣어도 되나 | [읽기](https://mynews20482.tistory.com/33) |
+| 34 | 일반형 → 서민형 전환, 서류와 타이밍 | [읽기](https://mynews20482.tistory.com/34) |
+| 35 | ISA 제도 변경 소식, 확정과 미확정을 구분하는 법 | [읽기](https://mynews20482.tistory.com/35) |
+| 37 | ISA vs 해외주식 일반계좌, 역할을 나누는 법 | [읽기](https://mynews20482.tistory.com/37) |
+| 40 | 이직·결혼·전세·내 집 마련, 인생 이벤트와 ISA | [읽기](https://mynews20482.tistory.com/40) |
+| 41 | 주린이 첫해 ISA 체크리스트 | [읽기](https://mynews20482.tistory.com/41) |
+
+### 다음 화
+
+- [39화: ISA 해지해도 되는 경우 / 절대 서두르면 안 되는 경우](https://mynews20482.tistory.com/39)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

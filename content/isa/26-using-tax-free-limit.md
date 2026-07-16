@@ -220,10 +220,32 @@ ISA는 **3년 유지·손익통산·9.9%** 패키지입니다.
 
 ## 관련 회차
 
-- 6화: 서민형 ISA 자격
-- 18화: 초보용 포트폴리오 예시
-- 21화: 손익통산 실전 예시
-- 28화: 금융소득종합과세와 가입 제한
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | [읽기](https://mynews20482.tistory.com/6) |
+| 18 | 초보용 ISA 포트폴리오 예시 3가지 | [읽기](https://mynews20482.tistory.com/18) |
+| 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
+| 21 | 손익통산 실전 예시로 이해하기 | [읽기](https://mynews20482.tistory.com/21) |
+| 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
+| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
+| 34 | 일반형 → 서민형 전환, 서류와 타이밍 | [읽기](https://mynews20482.tistory.com/34) |
+
+### 다음 화
+
+- [27화: 9.9% 분리과세, 언제부터 체감되나](https://mynews20482.tistory.com/27)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

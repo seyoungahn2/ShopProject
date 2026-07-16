@@ -223,10 +223,28 @@ ISA는 **원금 범위 중도인출**이 가능하지만, 투자 상품만 있�
 
 ## 관련 회차
 
-- 8화: ISA 원금 중도인출
-- 19화: 적립식 vs 일시납
-- 20화: ISA 리밸런싱
-- 25화: 테마·레버리지 ETF
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 18 | 초보용 ISA 포트폴리오 예시 3가지 | [읽기](https://mynews20482.tistory.com/18) |
+| 19 | 적립식 vs 일시납, ISA 납입 방식 고르는 기준 | [읽기](https://mynews20482.tistory.com/19) |
+| 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
+| 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
+
+### 다음 화
+
+- [24화: 하락장에서 ISA를 어떻게 굴릴까](https://mynews20482.tistory.com/24)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

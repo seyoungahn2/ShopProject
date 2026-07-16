@@ -257,10 +257,31 @@ ISA가 세금을 아껴 주는 만큼, **스스로 새는 구멍**을 막는 것
 
 ## 관련 회차
 
-- 2화: ISA 절세 숫자
-- 5화: 증권사 수수료 비교
-- 20화: 리밸런싱 주기
-- 22화: 분배금 재투자
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 5 | 중개형 ISA, 어느 증권사에서 열까? 개설 전 체크리스트 | [읽기](https://mynews20482.tistory.com/5) |
+| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
+| 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
+| 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
+| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | [읽기](https://mynews20482.tistory.com/25) |
+
+### 다음 화
+
+- [10화: ISA에 넣을 수 있는 것 / 못 넣는 것 한눈에 정리](https://mynews20482.tistory.com/10)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

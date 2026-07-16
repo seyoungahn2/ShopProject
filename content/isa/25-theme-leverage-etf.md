@@ -204,10 +204,30 @@ ISA **비과세 200만·400만**을 채우기 전에 계좌가 지치는 경우�
 
 ## 관련 회차
 
-- 2화: ISA vs 일반계좌
-- 13화: ISA에 배당 ETF
-- 21화: 손익통산 실전 예시
-- 27화: 9.9% 분리과세
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
+| 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | [읽기](https://mynews20482.tistory.com/13) |
+| 18 | 초보용 ISA 포트폴리오 예시 3가지 | [읽기](https://mynews20482.tistory.com/18) |
+| 21 | 손익통산 실전 예시로 이해하기 | [읽기](https://mynews20482.tistory.com/21) |
+| 24 | 하락장에서 ISA를 어떻게 굴릴까 | [읽기](https://mynews20482.tistory.com/24) |
+
+### 다음 화
+
+- [26화: 비과세 한도 200만·400만, 어떻게 채우나](https://mynews20482.tistory.com/26)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

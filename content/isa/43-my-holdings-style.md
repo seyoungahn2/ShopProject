@@ -271,10 +271,30 @@ ISA는 남과 비교하기보다 **3년 후의 나**와 비교하는 계좌입�
 
 ## 관련 회차
 
-- **13~18화** — ETF·배당 상품군
-- **20화** — 리밸런싱
-- **23~24화** — 버퍼·하락장
-- **48화** — 권유 vs 기록 구분
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
+| 23 | ISA 현금비중, 너무 비워두면 안 되는 이유 | [읽기](https://mynews20482.tistory.com/23) |
+| 24 | 하락장에서 ISA를 어떻게 굴릴까 | [읽기](https://mynews20482.tistory.com/24) |
+| 37 | ISA vs 해외주식 일반계좌, 역할을 나누는 법 | [읽기](https://mynews20482.tistory.com/37) |
+| 47 | 1인·가족 투자와 ISA, 계좌 역할 나누기 | [읽기](https://mynews20482.tistory.com/47) |
+| 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 | [읽기](https://mynews20482.tistory.com/48) |
+
+### 다음 화
+
+- [44화: 월 1회 ISA 점검 루틴](https://mynews20482.tistory.com/44)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

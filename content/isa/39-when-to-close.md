@@ -243,10 +243,34 @@ ISA는 **닫는 계좌**이기도 하지만, **3년짜리 약속**이기도 합�
 
 ## 관련 회차
 
-- **8화** — 원금 중도인출
-- **29화** — 풍차돌리기
-- **30화** — 연금 전환 60일
-- **38화** — 초보 실수
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 24 | 하락장에서 ISA를 어떻게 굴릴까 | [읽기](https://mynews20482.tistory.com/24) |
+| 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
+| 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
+| 31 | ISA 만기자금, 연금저축으로 갈까 IRP로 갈까 | [읽기](https://mynews20482.tistory.com/31) |
+| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
+| 35 | ISA 제도 변경 소식, 확정과 미확정을 구분하는 법 | [읽기](https://mynews20482.tistory.com/35) |
+| 37 | ISA vs 해외주식 일반계좌, 역할을 나누는 법 | [읽기](https://mynews20482.tistory.com/37) |
+| 38 | ISA 초보가 자주 하는 실수 10가지 | [읽기](https://mynews20482.tistory.com/38) |
+| 46 | ISA 3년 로드맵, 개설부터 만기까지 | [읽기](https://mynews20482.tistory.com/46) |
+
+### 다음 화
+
+- [40화: 이직·결혼·전세·내 집 마련, 인생 이벤트와 ISA](https://mynews20482.tistory.com/40)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

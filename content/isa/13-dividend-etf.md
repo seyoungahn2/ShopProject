@@ -264,10 +264,38 @@ ISA를 **배당 수집 게임**이 아니라 **세금 최적화 게임**으로 �
 
 ## 관련 회차
 
-- 2화: ISA vs 일반 세금 비교
-- 14화: S&P500·나스닥 ETF
-- 17화: 개별 배당주 vs ETF
-- 26화: 비과세 한도 채우기
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
+| 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | [읽기](https://mynews20482.tistory.com/6) |
+| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
+| 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
+| 12 | 배우자 ISA부터 채우는 이유, 부부 납입 순서 | [읽기](https://mynews20482.tistory.com/12) |
+| 15 | ISA 안전자산: 채권·RP·예금은 언제 쓰나 | [읽기](https://mynews20482.tistory.com/15) |
+| 16 | 리츠(REITs)를 ISA에 담을 때 체크할 것 | [읽기](https://mynews20482.tistory.com/16) |
+| 17 | 개별 배당주 vs 배당 ETF, ISA에서는 뭐가 편할까 | [읽기](https://mynews20482.tistory.com/17) |
+| 18 | 초보용 ISA 포트폴리오 예시 3가지 | [읽기](https://mynews20482.tistory.com/18) |
+| 21 | 손익통산 실전 예시로 이해하기 | [읽기](https://mynews20482.tistory.com/21) |
+| 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
+| 26 | 비과세 한도 200만·400만, 어떻게 채우나 | [읽기](https://mynews20482.tistory.com/26) |
+| 27 | 9.9% 분리과세, 언제부터 체감되나 | [읽기](https://mynews20482.tistory.com/27) |
+
+### 다음 화
+
+- [14화: S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점](https://mynews20482.tistory.com/14)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

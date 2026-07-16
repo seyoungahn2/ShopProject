@@ -283,10 +283,32 @@ ISA도 그 달력에 **작은 칸**으로라도 넣어 두는 편이, 3년 뒤 �
 
 ## 관련 회차
 
-- **33화** — 연말 납입·이월
-- **36화** — 비과세종합저축과 유동성
-- **39화** — 해지 타이밍
-- **42화** — 월급 납입표
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 28 | 금융소득종합과세와 ISA, 가입 제한 다시 정리 | [읽기](https://mynews20482.tistory.com/28) |
+| 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
+| 31 | ISA 만기자금, 연금저축으로 갈까 IRP로 갈까 | [읽기](https://mynews20482.tistory.com/31) |
+| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
+| 33 | 연말 ISA 납입 타이밍, 12월에 몰아넣어도 되나 | [읽기](https://mynews20482.tistory.com/33) |
+| 36 | ISA vs 비과세종합저축, 겹치면 뭐부터 | [읽기](https://mynews20482.tistory.com/36) |
+| 39 | ISA 해지해도 되는 경우 / 절대 서두르면 안 되는 경우 | [읽기](https://mynews20482.tistory.com/39) |
+
+### 다음 화
+
+- [41화: 주린이 첫해 ISA 체크리스트](https://mynews20482.tistory.com/41)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 

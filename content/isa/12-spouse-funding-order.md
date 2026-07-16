@@ -260,10 +260,30 @@ ISA는 **명의자 계좌**이므로, 부부 관계 변화 시 **계좌 분리·
 
 ## 관련 회차
 
-- 6화: 서민형 자격
-- 7화: 납입한도·이월
-- 32화: 부부 ISA 합산 전략
-- 33화: 연말 납입 타이밍
+본문에서 **"N화에서 말했듯"**, **"N화 참고"**처럼 언급한 회차는 아래에서 바로 찾을 수 있습니다.
+
+### 본문에서 언급한 회차
+
+| 화 | 제목 | 바로가기 |
+| --- | --- | --- |
+| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | [읽기](https://mynews20482.tistory.com/6) |
+| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 32 | 부부 ISA 합산 전략, 한도 두 배 쓰는 법 | [읽기](https://mynews20482.tistory.com/32) |
+| 33 | 연말 ISA 납입 타이밍, 12월에 몰아넣어도 되나 | [읽기](https://mynews20482.tistory.com/33) |
+| 40 | 이직·결혼·전세·내 집 마련, 인생 이벤트와 ISA | [읽기](https://mynews20482.tistory.com/40) |
+
+### 다음 화
+
+- [13화: ISA에 배당 ETF를 넣는 사람들이 많은 이유](https://mynews20482.tistory.com/13)
+
+### 시리즈 처음 보시는 분
+
+- [1화: ISA계좌 상세 설명 및 개설 타이밍](https://mynews20482.tistory.com/1)
+- [2화: ISA vs 일반계좌, 뭐가 더 유리할까?](https://mynews20482.tistory.com/2)
+- [3화: 가입 전 반드시 알아야 할 치명적인 함정 3가지](https://mynews20482.tistory.com/3)
+- [4화: ISA vs 연금저축 vs IRP, 뭐가 더 좋을까?](https://mynews20482.tistory.com/4)
+- [49화: ISA 시리즈 핵심 치트시트](https://mynews20482.tistory.com/49) (치트시트)
 
 ---
 
