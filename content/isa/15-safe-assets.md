@@ -1,4 +1,4 @@
-# ISA계좌 (15화) : ISA 안전자산, 채권·RP·예금은 언제 쓰나
+# ISA 안전자산, 채권·RP·예금은 언제 쓰나 | ISA계좌 (15화)
 
 안녕하세요.
 안대표입니다.
@@ -264,8 +264,8 @@ ISA 3년을 버티려면 그 바닥이 얇지 않은 편이 낫습니다.
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
 | 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
-| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
-| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 7 | 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 8 | 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
 | 10 | ISA에 넣을 수 있는 것 / 못 넣는 것 한눈에 정리 | [읽기](https://mynews20482.tistory.com/10) |
 | 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | [읽기](https://mynews20482.tistory.com/13) |
 | 14 | S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점 | [읽기](https://mynews20482.tistory.com/14) |

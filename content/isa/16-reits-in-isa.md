@@ -1,4 +1,4 @@
-# ISA계좌 (16화) : 리츠(REITs)를 ISA에 담을 때 체크할 것
+# 리츠(REITs)를 ISA에 담을 때 체크할 것 | ISA계좌 (16화)
 
 안녕하세요.
 안대표입니다.
@@ -265,12 +265,12 @@ ISA 안에서 **5%~15%** 정도 **보조 축**으로 두는 그림을 많이 봅
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
-| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
+| 7 | 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 9 | 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
 | 10 | ISA에 넣을 수 있는 것 / 못 넣는 것 한눈에 정리 | [읽기](https://mynews20482.tistory.com/10) |
 | 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | [읽기](https://mynews20482.tistory.com/13) |
 | 14 | S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점 | [읽기](https://mynews20482.tistory.com/14) |
-| 15 | ISA 안전자산: 채권·RP·예금은 언제 쓰나 | [읽기](https://mynews20482.tistory.com/15) |
+| 15 | ISA 안전자산, 채권·RP·예금은 언제 쓰나 | [읽기](https://mynews20482.tistory.com/15) |
 
 
 ---

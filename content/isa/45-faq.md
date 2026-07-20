@@ -1,4 +1,4 @@
-# 독자 질문형 Q&A 모음 (45화)
+# 독자 질문형 Q&A 모음 | ISA계좌 (45화)
 
 안녕하세요.
 안대표입니다.
@@ -280,10 +280,10 @@ Q&A 답변은 **일반 정보**이며, 개별 사안은 전문가 상담이 필�
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 1 | ISA가 뭔지, 그리고 왜 지금 열어두는 게 편한지 | [읽기](https://mynews20482.tistory.com/1) |
 | 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
 | 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | [읽기](https://mynews20482.tistory.com/22) |
-| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | [읽기](https://mynews20482.tistory.com/25) |
+| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까? | [읽기](https://mynews20482.tistory.com/25) |
 | 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
 | 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
 

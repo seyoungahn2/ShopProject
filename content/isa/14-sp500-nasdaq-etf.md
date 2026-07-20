@@ -1,4 +1,4 @@
-# ISA계좌 (14화) : S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점
+# S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점 | ISA계좌 (14화)
 
 안녕하세요.
 안대표입니다.
@@ -274,10 +274,10 @@ S&P500·나스닥 ETF는 ISA 시리즈에서 **가장 많이 언급되는 상품
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 1 | ISA가 뭔지, 그리고 왜 지금 열어두는 게 편한지 | [읽기](https://mynews20482.tistory.com/1) |
 | 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
-| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
-| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
+| 7 | 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 9 | 수수료·거래비용, 숨은 비용부터 줄이는 법 | [읽기](https://mynews20482.tistory.com/9) |
 | 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | [읽기](https://mynews20482.tistory.com/11) |
 | 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | [읽기](https://mynews20482.tistory.com/13) |
 

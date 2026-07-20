@@ -4,21 +4,21 @@
 
 | 화 | 제목 | URL |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | https://mynews20482.tistory.com/1 |
+| 1 | ISA가 뭔지, 그리고 왜 지금 열어두는 게 편한지 | https://mynews20482.tistory.com/1 |
 | 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | https://mynews20482.tistory.com/2 |
 | 3 | 가입 전 반드시 알아야 할 치명적인 함정 3가지 | https://mynews20482.tistory.com/3 |
 | 4 | ISA vs 연금저축 vs IRP, 뭐가 더 좋을까? | https://mynews20482.tistory.com/4 |
 | 5 | 중개형 ISA, 어느 증권사에서 열까? 개설 전 체크리스트 | https://mynews20482.tistory.com/5 |
 | 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | https://mynews20482.tistory.com/6 |
-| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | https://mynews20482.tistory.com/7 |
-| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | https://mynews20482.tistory.com/8 |
-| 9 | ISA 수수료·거래비용, 숨은 비용부터 줄이는 법 | https://mynews20482.tistory.com/9 |
+| 7 | 납입한도·이월, 연 2천만·총 1억 실전 계산법 | https://mynews20482.tistory.com/7 |
+| 8 | 원금 중도인출, 언제 빼고 언제 참아야 할까 | https://mynews20482.tistory.com/8 |
+| 9 | 수수료·거래비용, 숨은 비용부터 줄이는 법 | https://mynews20482.tistory.com/9 |
 | 10 | ISA에 넣을 수 있는 것 / 못 넣는 것 한눈에 정리 | https://mynews20482.tistory.com/10 |
 | 11 | 미국 주식 못 사면? 국내상장 해외 ETF로 대체하는 법 | https://mynews20482.tistory.com/11 |
 | 12 | 배우자 ISA부터 채우는 이유, 부부 납입 순서 | https://mynews20482.tistory.com/12 |
 | 13 | ISA에 배당 ETF를 넣는 사람들이 많은 이유 | https://mynews20482.tistory.com/13 |
 | 14 | S&P500·나스닥 ETF, ISA에서 굴릴 때 주의점 | https://mynews20482.tistory.com/14 |
-| 15 | ISA 안전자산: 채권·RP·예금은 언제 쓰나 | https://mynews20482.tistory.com/15 |
+| 15 | ISA 안전자산, 채권·RP·예금은 언제 쓰나 | https://mynews20482.tistory.com/15 |
 | 16 | 리츠(REITs)를 ISA에 담을 때 체크할 것 | https://mynews20482.tistory.com/16 |
 | 17 | 개별 배당주 vs 배당 ETF, ISA에서는 뭐가 편할까 | https://mynews20482.tistory.com/17 |
 | 18 | 초보용 ISA 포트폴리오 예시 3가지 | https://mynews20482.tistory.com/18 |
@@ -28,7 +28,7 @@
 | 22 | 분배금·배당 들어오면 재투자할까, 현금으로 둘까 | https://mynews20482.tistory.com/22 |
 | 23 | ISA 현금비중, 너무 비워두면 안 되는 이유 | https://mynews20482.tistory.com/23 |
 | 24 | 하락장에서 ISA를 어떻게 굴릴까 | https://mynews20482.tistory.com/24 |
-| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까 | https://mynews20482.tistory.com/25 |
+| 25 | 테마·레버리지 ETF, ISA에 넣어도 될까? | https://mynews20482.tistory.com/25 |
 | 26 | 비과세 한도 200만·400만, 어떻게 채우나 | https://mynews20482.tistory.com/26 |
 | 27 | 9.9% 분리과세, 언제부터 체감되나 | https://mynews20482.tistory.com/27 |
 | 28 | 금융소득종합과세와 ISA, 가입 제한 다시 정리 | https://mynews20482.tistory.com/28 |
@@ -51,7 +51,7 @@
 | 45 | 독자 질문형 Q&A 모음 | https://mynews20482.tistory.com/45 |
 | 46 | ISA 3년 로드맵, 개설부터 만기까지 | https://mynews20482.tistory.com/46 |
 | 47 | 1인·가족 투자와 ISA, 계좌 역할 나누기 | https://mynews20482.tistory.com/47 |
-| 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 | https://mynews20482.tistory.com/48 |
+| 48 | 조회수용 제목보다 중요한 ISA 글쓰기 기준 (운영자 메모) | https://mynews20482.tistory.com/48 |
 | 49 | ISA 시리즈 핵심 치트시트 | https://mynews20482.tistory.com/49 |
 | 50 | ISA 50화 총정리, 그리고 다음에 다룰 것 | https://mynews20482.tistory.com/50 |
 

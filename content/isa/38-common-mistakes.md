@@ -1,4 +1,4 @@
-# ISA계좌 (38화) : ISA 초보가 자주 하는 실수 10가지
+# ISA 초보가 자주 하는 실수 10가지 | ISA계좌 (38화)
 
 안녕하세요.
 안대표입니다.
@@ -257,11 +257,11 @@ ISA는 **일반 통장 감각**(인출 후 한도 복구, 해외 직접 매매)�
 
 | 화 | 제목 | 바로가기 |
 | --- | --- | --- |
-| 1 | ISA계좌 상세 설명 및 개설 타이밍 | [읽기](https://mynews20482.tistory.com/1) |
+| 1 | ISA가 뭔지, 그리고 왜 지금 열어두는 게 편한지 | [읽기](https://mynews20482.tistory.com/1) |
 | 2 | ISA vs 일반계좌, 뭐가 더 유리할까? | [읽기](https://mynews20482.tistory.com/2) |
 | 6 | 서민형 ISA 자격, 총급여 5천만 원이면 꼭 확인하세요 | [읽기](https://mynews20482.tistory.com/6) |
-| 7 | ISA 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
-| 8 | ISA 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
+| 7 | 납입한도·이월, 연 2천만·총 1억 실전 계산법 | [읽기](https://mynews20482.tistory.com/7) |
+| 8 | 원금 중도인출, 언제 빼고 언제 참아야 할까 | [읽기](https://mynews20482.tistory.com/8) |
 | 28 | 금융소득종합과세와 ISA, 가입 제한 다시 정리 | [읽기](https://mynews20482.tistory.com/28) |
 | 29 | ISA 풍차돌리기, 만기 후 재가입 전략의 실체 | [읽기](https://mynews20482.tistory.com/29) |
 | 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
