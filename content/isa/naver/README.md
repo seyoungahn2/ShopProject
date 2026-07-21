@@ -25,6 +25,14 @@
 | :--- | :--- |
 | [`_template.md`](_template.md) | 회차마다 쓰는 공통 템플릿 |
 | `01`~`49` 초안 | 고검색 12화 네이버 초안 (아래 목록) |
+| [`preview/index.html`](preview/index.html) | **문서처럼 보는 HTML 미리보기** (브라우저에서 열기) |
+
+### 미리보기 여는 법
+
+1. Cursor에서 `content/isa/naver/preview/index.html` 우클릭 → **Open with Live Server** / 브라우저로 열기  
+2. 또는 파일 탐색기에서 해당 HTML을 Chrome/Edge로 연다  
+3. 목록에서 회차를 클릭하면 문서 형태로 보입니다
+
 
 ## 고검색 12화 초안 목록
 
