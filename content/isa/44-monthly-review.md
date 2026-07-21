@@ -292,7 +292,7 @@ ISA는 마라톤 계좌에 가깝습니다.
 | 20 | ISA 리밸런싱, 얼마나 자주 손대면 될까 | [읽기](https://mynews20482.tistory.com/20) |
 | 23 | ISA 현금비중, 너무 비워두면 안 되는 이유 | [읽기](https://mynews20482.tistory.com/23) |
 | 24 | 하락장에서 ISA를 어떻게 굴릴까 | [읽기](https://mynews20482.tistory.com/24) |
-| 30 | ISA 만기 후 60일, 연금 전환 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
+| 30 | 만기 60일 안에 연금 전환하는 실전 체크리스트 | [읽기](https://mynews20482.tistory.com/30) |
 | 43 | 내가 ISA에 실제로 담는 상품군 (운용 기록) | [읽기](https://mynews20482.tistory.com/43) |
 
 
