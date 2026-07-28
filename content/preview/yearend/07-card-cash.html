@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>신용카드·체크·현금영수증 | 연말정산 (7화)</title>
+<style>
+body{font-family:Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif;max-width:760px;margin:32px auto;padding:0 20px 64px;line-height:1.75;color:#1a1a1a;background:#faf9f7}
+h1{font-size:1.55rem;line-height:1.35;margin:0 0 .75rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin-top:1.75rem;border-bottom:1px solid #e5e2da;padding-bottom:.35rem}
+h3{font-size:1.05rem;margin-top:1.25rem}
+p,li{font-size:1rem}
+a{color:#0b5fff}
+.nav{font-size:.9rem;margin-bottom:1.25rem;color:#555}
+.nav a{margin-right:.65rem}
+.badge{display:inline-block;font-size:.75rem;background:#e8f0fe;color:#174ea6;padding:.15rem .45rem;border-radius:4px;margin-bottom:.75rem}
+hr{border:none;border-top:1px solid #ddd;margin:1.5rem 0}
+strong{font-weight:700}
+ul,ol{padding-left:1.25rem}
+li{margin:.28rem 0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}
+th{background:#f0eee8}
+code{font-size:.9em;background:#f0eee8;padding:.1rem .3rem;border-radius:3px}
+pre{background:#f0eee8;padding:1rem;overflow:auto;border-radius:6px}
+.footer{margin-top:2.5rem;font-size:.85rem;color:#777}
+.series-grid{display:grid;gap:1rem;margin:1.5rem 0}
+.card{background:#fff;border:1px solid #e5e2da;border-radius:10px;padding:1rem 1.15rem}
+.card h2{margin-top:0;border:none;padding:0;font-size:1.1rem}
+.card p{margin:.4rem 0 .75rem;color:#555;font-size:.95rem}
+.ep-list{columns:1}
+@media(min-width:640px){.ep-list{columns:1}}
+</style>
+</head>
+<body>
+<p class="nav"><a href="../index.html">전체</a> · <a href="index.html">연말정산 목록</a> · <a href="../../yearend/07-card-cash.md">원본 md</a></p>
+<span class="badge">연말정산 · 티스토리 복사용 미리보기</span>
+<h1>신용카드·체크·현금영수증 | 연말정산 (7화)</h1>
+<p>안녕하세요.<br />
+안대표입니다.</p>
+<p>카드 공제는 “쓰기만 하면 돌려받는다”는 오해가 가장 많습니다.<br />
+실제로는 <strong>총급여의 일정 비율을 넘는 사용분</strong>만 소득공제 후보가 되고, 결제 수단별로 공제율이 다릅니다.<br />
+오늘은 계산 틀과 제외 항목, 그리고 연말에 몰아쓰기 함정을 정리합니다.</p>
+<h2>30초 요약</h2>
+<ul>
+<li>신용카드등 공제는 흔히 <strong>총급여 25% 초과분</strong>에 대해, 신용·체크·현금영수증 등 <strong>수단별 공제율</strong>을 적용하는 소득공제다.</li>
+<li>공제율은 흔히 <strong>신용 &lt; 체크·현금</strong> 쪽으로 안내되는 경우가 많아, “무엇을 썼는지”보다 <strong>한도·최저</strong>가 병목이다.</li>
+<li>세금·공과금·선불카드 충전·이체성 지출 등 <strong>제외·제한</strong>이 많아 간소화 숫자를 그대로 믿기 어렵다.</li>
+</ul>
+<p>→ <a href="발행 후 URL">월세·전세·주택자금 공제 | 연말정산 (6화)</a><br />
+→ <a href="발행 후 URL">연말정산이란, 환급 vs 추가납부 | 연말정산 (1화)</a></p>
+<hr />
+<h2>1. 계산 틀 (뼈대만)</h2>
+<p>과세연도마다 세부 특례(전통시장·대중교통·도서공연 등)가 달라질 수 있습니다.<br />
+뼈대는 이렇게 기억하면 됩니다. <strong>숫자는 해당 과세연도 홈택스 확정값</strong>을 쓰세요.</p>
+<ol>
+<li>그해 <strong>공제 대상 사용액</strong> 합계 (수단·업종별 분류)</li>
+<li>− <strong>총급여 × 최저 사용 비율</strong>(흔히 25%로 안내)</li>
+<li>남는 금액에 <strong>수단별 공제율</strong> 적용 (신용 / 체크·현금 / 특례)</li>
+<li><strong>공제 한도</strong>(총급여 구간별)에서 컷</li>
+<li>소득공제이므로 <strong>세율 구간만큼</strong> 세금 효과</li>
+</ol>
+<p><strong>한 줄 강조</strong>: 총급여의 25%를 안 넘기면, 카드를 아무리 써도 이 칸 공제는 0에 가깝습니다.</p>
+<h2>2. 수단별 공제율 감각</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">수단 (요지)</th>
+<th style="text-align: left;">흔한 안내 감각</th>
+<th style="text-align: left;">실무</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>신용카드</strong></td>
+<td style="text-align: left;">상대적으로 낮은 공제율</td>
+<td style="text-align: left;">포인트·할부와 무관하게 “사용액” 정의 확인</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>체크카드·현금영수증</strong></td>
+<td style="text-align: left;">상대적으로 높은 공제율</td>
+<td style="text-align: left;">현금영수증 자진발급·의무발급</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>전통시장·대중교통 등</strong></td>
+<td style="text-align: left;">추가·우대 특례가 있는 해</td>
+<td style="text-align: left;"><strong>해당 연도</strong> 특례 문구</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>도서·공연·문화 등</strong></td>
+<td style="text-align: left;">소득 요건·한도 있는 해</td>
+<td style="text-align: left;">미확정·폐지·변경 가능 — 확정 안내만</td>
+</tr>
+</tbody>
+</table>
+<p>“체크만 쓰면 이득”도 한도와 최저 사용을 넘긴 뒤에야 의미가 있습니다.<br />
+최저에 못 미치면 공제율 차이가 소용없습니다.</p>
+<h2>3. 한도 — 총급여 구간</h2>
+<p>공제액에는 <strong>연간 한도</strong>가 있고, 총급여가 높을수록 한도가 낮아지거나 다르게 잡히는 구조가 흔합니다.<br />
+고소득 구간에서는 카드 공제 체감이 급격히 줄어듭니다.</p>
+<p>전략 감각:</p>
+<ul>
+<li>한도 근처인지 11월에 간소화·카드사 앱으로 가늠</li>
+<li>한도 채웠으면 12월에 <strong>공제 목적 소비</strong>를 늘리지 않음</li>
+<li>여유 자금은 소비가 아니라 <strong>연금·IRP·부채 상환</strong>과 비교 (각각의 요건 확인)</li>
+</ul>
+<h2>4. 제외·함정 항목</h2>
+<p>공제에서 빠지거나 제한되는 예(완전 목록 아님 — 안내문 기준):</p>
+<ul>
+<li>세금, 공과금, 아파트관리비 일부 처리 방식</li>
+<li>보험료, 휴대폰 요금 등 (연도·처리에 따라 갈릴 수 있음 — 확인)</li>
+<li>신차 구입 등 고액 내구재 관련 제한이 있는 해</li>
+<li>사업 경비와 혼재된 카드</li>
+<li>가족카드 사용분의 <strong>명의 귀속</strong></li>
+<li>선불카드·기프트 충전 후 사용 시점 이슈</li>
+</ul>
+<p>간소화에 큰 금액이 보여도, <strong>공제 대상 사용액</strong>은 그보다 작을 수 있습니다.<br />
+미리보기에서 “공제 제외” 메모를 읽고 기대 환급을 낮추세요.</p>
+<h2>5. 가정 예시: 왜 공제가 작을까</h2>
+<p><strong>가정 예시</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">금액</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">총급여</td>
+<td style="text-align: left;">4,800만 원</td>
+</tr>
+<tr>
+<td style="text-align: left;">최저 사용 (25% 가정)</td>
+<td style="text-align: left;"><strong>1,200만 원</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">카드·현금 공제대상 합계</td>
+<td style="text-align: left;">1,500만 원</td>
+</tr>
+<tr>
+<td style="text-align: left;">초과분</td>
+<td style="text-align: left;">300만 원</td>
+</tr>
+<tr>
+<td style="text-align: left;">가중 평균 공제율 가정</td>
+<td style="text-align: left;">예: 20%대 혼합</td>
+</tr>
+<tr>
+<td style="text-align: left;">공제액 감각</td>
+<td style="text-align: left;">수십만 원대 → <strong>한도·특례로 재조정</strong></td>
+</tr>
+</tbody>
+</table>
+<p>1,500만 원을 썼다고 1,500만이 공제되지 않습니다.<br />
+초과분과 공제율·한도를 거친 뒤의 소득공제입니다.</p>
+<h2>6. 맞벌이·가족카드</h2>
+<ul>
+<li>사용액은 <strong>카드 명의자(또는 규정상 귀속자)</strong> 기준으로 잡히는 경우가 많음</li>
+<li>맞벌이는 <strong>최저 사용(총급여 25%)</strong>을 각자 넘기기 쉬운지 비교</li>
+<li>외벌이+배우자 카드만 쓰면, 근로자 본인 공제에 안 붙을 수 있음</li>
+</ul>
+<p>소비를 옮길 수 있다면, <strong>공제를 받을 근로자 명의</strong>로 생활비를 모으는 쪽이 유리한 해가 있습니다.<br />
+다만 가계 편의·신용관리가 우선이고, 공제는 그다음입니다.</p>
+<h2>7. 연말 몰아쓰기 vs 연중 루틴</h2>
+<p>12월에 대형마트를 도는 “연말정산 쇼핑”은</p>
+<ul>
+<li>이미 한도를 찼거나</li>
+<li>아직 최저 사용에 한참 못 미치거나</li>
+<li>제외 품목만 늘리거나</li>
+</ul>
+<p>하는 경우가 많습니다.<br />
+차라리 <strong>분기 1회</strong> 카드사·홈택스에서 누적 사용을 보고, 체크·현금 비중만 미세 조정하는 편이 낫습니다.</p>
+<p>현금영수증은 의무발급 업소·자진발급 앱을 연초에 켜 두면 누락이 줄어듭니다.</p>
+<hr />
+<h2>핵심 숫자</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">요지</th>
+<th style="text-align: left;">확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>최저 사용</strong></td>
+<td style="text-align: left;">총급여 × <strong>흔히 25%</strong></td>
+<td style="text-align: left;"><strong>해당 과세연도</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>공제율</strong></td>
+<td style="text-align: left;">신용 / 체크·현금 / 특례 차등</td>
+<td style="text-align: left;">홈택스</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>한도</strong></td>
+<td style="text-align: left;">총급여 구간별</td>
+<td style="text-align: left;">홈택스</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>형태</strong></td>
+<td style="text-align: left;"><strong>소득공제</strong></td>
+<td style="text-align: left;">세율만큼 효과</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>특례</strong></td>
+<td style="text-align: left;">전통시장·대중교통 등</td>
+<td style="text-align: left;">연도별·<strong>미확정</strong> 주의</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기준</strong></td>
+<td style="text-align: left;"><strong>2026-07</strong> 서술</td>
+<td style="text-align: left;">확정 안내만 계획에 반영</td>
+</tr>
+</tbody>
+</table>
+<h2>흔한 실수 vs 올바른 접근</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">흔한 실수</th>
+<th style="text-align: left;">올바른 접근</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">카드 사용액 = 공제액</td>
+<td style="text-align: left;"><strong>최저·공제율·한도</strong> 후 금액만 기대</td>
+</tr>
+<tr>
+<td style="text-align: left;">12월 몰아쓰기로 환급 극대화</td>
+<td style="text-align: left;">누적·한도 확인 후 <strong>불필요한 소비 금지</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">체크만 쓰면 무조건 이득</td>
+<td style="text-align: left;">최저 미달이면 공제율 무의미</td>
+</tr>
+<tr>
+<td style="text-align: left;">간소화 합계만 믿음</td>
+<td style="text-align: left;">제외 항목·미리보기 메모 확인</td>
+</tr>
+<tr>
+<td style="text-align: left;">배우자 카드로만 생활</td>
+<td style="text-align: left;"><strong>공제 받을 명의</strong>와 사용 귀속 맞추기</td>
+</tr>
+</tbody>
+</table>
+<h2>실전 체크리스트</h2>
+<ul>
+<li>[ ] 총급여 기준으로 <strong>최저 사용액</strong>을 계산해 봤다</li>
+<li>[ ] 카드사·현금영수증 누적 사용을 11월에 한 번 조회했다</li>
+<li>[ ] 신용/체크/현금 비중을 한도·최저와 함께 점검했다</li>
+<li>[ ] 전통시장·대중교통 등 <strong>특례</strong>가 올해 있는지 홈택스에서 확인했다</li>
+<li>[ ] 제외 가능성이 큰 지출(세금·이체성 등)을 기대에서 뺐다</li>
+<li>[ ] 맞벌이·가족카드 귀속을 정리했다</li>
+<li>[ ] 한도 도달 후 공제 목적 추가 소비를 하지 않기로 정했다</li>
+</ul>
+<h2>이번 화 전략</h2>
+<p><strong>초보</strong>: 올해는 “내가 최저(25% 감각)를 넘겼는가?”만 답하면 충분하다. 못 넘겼으면 카드 공제는 포기하고 다른 칸(연금·월세)에 집중한다.</p>
+<p><strong>직장인</strong>: 한도 전후인지 보고, 남았다면 체크·현금·특례 비중만 조정한다. 소비를 늘리지는 않는다.</p>
+<p><strong>부부</strong>: 총급여가 낮은 쪽이 최저를 넘기기 쉬운지, 높은 쪽 한도가 작은지 비교해 <strong>생활비 결제 명의</strong>를 나눈다.</p>
+<h2>확인 권장</h2>
+<ul>
+<li><strong>국세청·홈택스</strong>: 신용카드등 소득공제 요건·한도·특례</li>
+<li><strong>카드사 앱·국세청 현금영수증</strong>: 연간 사용·발급 내역</li>
+<li><strong>회사 급여팀</strong>: 간소화 반영 일정</li>
+</ul>
+<h2>핵심 정리</h2>
+<ol>
+<li>카드 공제는 <strong>최저 사용을 넘는 분 × 수단별 공제율</strong>, 그리고 <strong>한도</strong>다.</li>
+<li>결제 수단 최적화는 최저·한도 안에서만 의미가 있다.</li>
+<li>연말 쇼핑으로 환급을 키우려다 <strong>불필요 소비</strong>만 늘리기 쉽다.</li>
+</ol>
+<hr />
+<h2>관련 회차</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">화</th>
+<th style="text-align: left;">제목</th>
+<th style="text-align: left;">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">연말정산이란, 환급 vs 추가납부</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 1화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">월급 원천징수와 연말정산 차이</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 2화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">인적공제·기본공제 함정</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 3화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">보장성 보험료 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 4화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">의료비·교육비 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 5화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">월세·전세·주택자금 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 6화</a></td>
+</tr>
+</tbody>
+</table>
+<h2>면책</h2>
+<p>본 글은 일반 정보 정리이며 <strong>세무 자문이 아닙니다.</strong><br />
+신용카드등 공제 한도·공제율·특례는 과세연도에 따라 달라지므로, <strong>해당 과세연도 국세청·홈택스</strong>에서 확인하세요.</p>
+<p>감사합니다.</p>
+<p class="footer">Cursor에서 HTML 미리보기 · 발행은 원본 Markdown을 티스토리에 붙여넣으세요.</p>
+</body>
+</html>

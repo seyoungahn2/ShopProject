@@ -12,7 +12,17 @@
 | **4** | [loan/](loan/) | `\| 대출이자 (N화)` | 이자 절감·대환·신용·금리인하요구권 |
 | **5** | [dividend-tax/](dividend-tax/) | `\| 배당절세 (N화)` | 금융소득종합과세·건보·신고 (현금흐름 운영과 역할 분리) |
 
-## 사용 방법
+## Cursor에서 미리보기
+
+브라우저처럼 읽으려면:
+
+1. 브랜치 `cursor/four-finance-series-74f0` 체크아웃  
+2. [`preview/index.html`](preview/index.html) 열기  
+3. Cursor에서 **Open with Live Preview** 또는 Simple Browser로 열기  
+
+시리즈별: `preview/yearend/`, `preview/insurance/`, `preview/loan/`, `preview/dividend-tax/`
+
+## 사용 방법 (티스토리 발행)
 
 1. 각 폴더 `README.md`에서 회차·목표 확인  
 2. `01-….md` ~ `12-….md` 본문을 티스토리에 복사  

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>여러 대출 상환 순서 | 대출이자 (9화)</title>
+<style>
+body{font-family:Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif;max-width:760px;margin:32px auto;padding:0 20px 64px;line-height:1.75;color:#1a1a1a;background:#faf9f7}
+h1{font-size:1.55rem;line-height:1.35;margin:0 0 .75rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin-top:1.75rem;border-bottom:1px solid #e5e2da;padding-bottom:.35rem}
+h3{font-size:1.05rem;margin-top:1.25rem}
+p,li{font-size:1rem}
+a{color:#0b5fff}
+.nav{font-size:.9rem;margin-bottom:1.25rem;color:#555}
+.nav a{margin-right:.65rem}
+.badge{display:inline-block;font-size:.75rem;background:#e8f0fe;color:#174ea6;padding:.15rem .45rem;border-radius:4px;margin-bottom:.75rem}
+hr{border:none;border-top:1px solid #ddd;margin:1.5rem 0}
+strong{font-weight:700}
+ul,ol{padding-left:1.25rem}
+li{margin:.28rem 0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}
+th{background:#f0eee8}
+code{font-size:.9em;background:#f0eee8;padding:.1rem .3rem;border-radius:3px}
+pre{background:#f0eee8;padding:1rem;overflow:auto;border-radius:6px}
+.footer{margin-top:2.5rem;font-size:.85rem;color:#777}
+.series-grid{display:grid;gap:1rem;margin:1.5rem 0}
+.card{background:#fff;border:1px solid #e5e2da;border-radius:10px;padding:1rem 1.15rem}
+.card h2{margin-top:0;border:none;padding:0;font-size:1.1rem}
+.card p{margin:.4rem 0 .75rem;color:#555;font-size:.95rem}
+.ep-list{columns:1}
+@media(min-width:640px){.ep-list{columns:1}}
+</style>
+</head>
+<body>
+<p class="nav"><a href="../index.html">전체</a> · <a href="index.html">대출이자 목록</a> · <a href="../../loan/09-payoff-order.md">원본 md</a></p>
+<span class="badge">대출이자 · 티스토리 복사용 미리보기</span>
+<h1>여러 대출 상환 순서 | 대출이자 (9화)</h1>
+<p>안녕하세요.<br />
+안대표입니다.</p>
+<h2>30초 요약</h2>
+<ul>
+<li>여러 대출이 있으면 <strong>실효 금리·연체 위험·수수료</strong>로 순서를 정한다.</li>
+<li>고금리부터 갚는 방법과 작은 잔액부터 갚는 방법은 목표가 다르다.</li>
+<li>순서를 정한 뒤에도 <strong>최소 상환 연체 방지</strong>가 전제다.</li>
+</ul>
+<p>이전 글: <a href="발행 후 URL">신용점수·카드론·현금서비스 | 대출이자 (8화)</a></p>
+<hr />
+<h2>1. 왜 순서가 이자를 가르나</h2>
+<p>여유 자금이 한정되어 있으면, 어디에 먼저 넣느냐에 따라<br />
+<strong>다음 달 이자</strong>와 <strong>완제 속도</strong>가 달라진다.<br />
+모든 대출에 똑같이 나눠 넣는 것은 관리가 편해 보여도,<br />
+이자 최소화와는 거리가 있을 수 있다.</p>
+<p>전제 조건:</p>
+<ol>
+<li>모든 건의 <strong>약정 최소 상환</strong>은 지킨다 (연체 금지)  </li>
+<li>그 위에 생기는 <strong>여유분</strong>의 투입 순서를 정한다  </li>
+<li>중도상환수수료·해지 불이익을 계산에 넣는다  </li>
+</ol>
+<h2>2. 두 가지 대표 방법</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">방법</th>
+<th style="text-align: left;">규칙</th>
+<th style="text-align: left;">장점</th>
+<th style="text-align: left;">한계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>금리 우선</strong></td>
+<td style="text-align: left;">실효 금리 높은 순</td>
+<td style="text-align: left;"><strong>총이자 절감</strong>에 유리한 편</td>
+<td style="text-align: left;">동기 부여가 약할 수 있음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>잔액 우선</strong></td>
+<td style="text-align: left;">작은 잔액부터 완제</td>
+<td style="text-align: left;"><strong>심리적 완주</strong>·관리 단순화</td>
+<td style="text-align: left;">고금리가 남으면 이자 손실 가능</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>위험 우선</strong></td>
+<td style="text-align: left;">연체 임박·변동 충격부터</td>
+<td style="text-align: left;">신용·가계 붕괴 방지</td>
+<td style="text-align: left;">이자 최적과 다를 수 있음</td>
+</tr>
+</tbody>
+</table>
+<p>실무에서는 혼합이 흔하다.<br />
+예: 연체 위험 건을 먼저 정상화 → 이후 고금리 순.</p>
+<h2>3. 실효 금리로 정렬하는 법</h2>
+<p>표에 적어 본다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">대출</th>
+<th style="text-align: left;">잔액</th>
+<th style="text-align: left;">금리</th>
+<th style="text-align: left;">수수료·기타</th>
+<th style="text-align: left;">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">현금서비스</td>
+<td style="text-align: left;">80만</td>
+<td style="text-align: left;"><strong>가정 15%</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;">최우선 후보</td>
+</tr>
+<tr>
+<td style="text-align: left;">카드론</td>
+<td style="text-align: left;">400만</td>
+<td style="text-align: left;"><strong>가정 12%</strong></td>
+<td style="text-align: left;">—</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">신용A</td>
+<td style="text-align: left;">1,500만</td>
+<td style="text-align: left;"><strong>가정 7%</strong></td>
+<td style="text-align: left;">중도 <strong>가정 0.5%</strong></td>
+<td style="text-align: left;">수수료 감안</td>
+</tr>
+<tr>
+<td style="text-align: left;">주담대</td>
+<td style="text-align: left;">1.8억</td>
+<td style="text-align: left;"><strong>가정 4%</strong></td>
+<td style="text-align: left;">중도 있음</td>
+<td style="text-align: left;">면제 후 검토</td>
+</tr>
+</tbody>
+</table>
+<p>금리는 <strong>가정 예시</strong>다. 본인 앱 수치로 교체한다.<br />
+신용A에 수수료가 있으면, “지금 갚을 때의 순이득”을 7화 방식으로 재계산한다.</p>
+<h2>4. 심리적 방법(잔액 우선)을 쓸 때</h2>
+<p>작은 잔액부터 없애면 목록이 짧아져 관리 실수가 줄어든다.<br />
+다만 고금리 큰 잔액이 오래 남으면 이자가 계속 나온다.</p>
+<p>보완:</p>
+<ul>
+<li>잔액 우선을 쓰더라도 <strong>현금서비스·리볼빙</strong>처럼 극단적 고금리는 예외로 먼저  </li>
+<li>완제된 건의 월 상환액을 <strong>다음 순위로 자동 이전</strong>(눈덩이)  </li>
+<li>분기마다 금리 순으로 <strong>재정렬</strong>할지 점검  </li>
+</ul>
+<h2>5. 여유 자금 투입 규칙(예시)</h2>
+<p>매월 급여 후:</p>
+<ol>
+<li>생활비·필수 고정비 확보  </li>
+<li>모든 대출 <strong>최소(약정) 상환</strong>  </li>
+<li>비상금 최소치 유지(과도한 제로화 지양)  </li>
+<li>남은 금액을 <strong>1순위 대출</strong>에만 추가 상환  </li>
+<li>1순위 완제 시 2순위로 월 여유 전체를 이동  </li>
+</ol>
+<p>투자 수익률이 대출 금리보다 “높을 것 같다”는 이유로<br />
+고금리 빚을 방치하는 선택은, 확정 이자 vs 불확정 수익의 비교다.<br />
+가계 방어 관점에서는 <strong>확정 고금리부터</strong> 줄이는 편이 안전한 경우가 많다.</p>
+<h2>6. 주담대와 단기 고금리가 같이 있을 때</h2>
+<p>주담대 금리가 낮아 보여도, 현금서비스·카드론이 있으면<br />
+여유 자금의 1순위는 대개 <strong>단기 고금리</strong>다.<br />
+다만 주담대 연체가 임박했다면 <strong>위험 우선</strong>이 이자를 앞선다.</p>
+<p>판단 보조:</p>
+<ul>
+<li>연체 D-day가 가까운 건 → 위험 우선  </li>
+<li>모두 정상 상환 중 → 실효 금리 우선  </li>
+<li>주담대 중도수수료가 크면 → 면제·소액만, 고금리는 별도 집중  </li>
+</ul>
+<p>“집 대출부터”라는 감정보다 <strong>표의 숫자</strong>를 따른다.</p>
+<h2>7. 가족·맞벌이 합의</h2>
+<p>순서가 사람마다 다르면 여유 자금이 분산된다.<br />
+맞벌이·가족 공동이라면:</p>
+<ol>
+<li>공동 표에 대출을 모두 올린다(개인 정보 보호 범위 합의)  </li>
+<li>1순위를 <strong>한 줄</strong>로 합의한다  </li>
+<li>완제 시 다음 순위를 미리 적어 둔다  </li>
+<li>월 점검 15분을 고정한다  </li>
+</ol>
+<p>합의 없는 “각자 알아서”는 연체 실수와 이자 낭비를 키운다.</p>
+<h2>핵심 숫자 (가정 예시)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">가정·기준</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">정렬 1키</td>
+<td style="text-align: left;"><strong>실효 금리</strong> (앱 적용금리)</td>
+</tr>
+<tr>
+<td style="text-align: left;">정렬 2키</td>
+<td style="text-align: left;">연체까지 남은 <strong>일수·금액</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">정렬 3키</td>
+<td style="text-align: left;">중도수수료 <strong>순이득</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">여유 투입</td>
+<td style="text-align: left;">최소 상환 후 <strong>1곳에 집중</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">재검토</td>
+<td style="text-align: left;"><strong>분기 1회</strong> 표 갱신</td>
+</tr>
+</tbody>
+</table>
+<h2>흔한 실수 vs 올바른 접근</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">흔한 실수</th>
+<th style="text-align: left;">올바른 접근</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">모든 대출에 균등 분할</td>
+<td style="text-align: left;">최소 유지 + <strong>1순위 집중</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">주담대만 열심히, 현금성 방치</td>
+<td style="text-align: left;">고금리 단기부터</td>
+</tr>
+<tr>
+<td style="text-align: left;">최소 상환을 깜빡</td>
+<td style="text-align: left;">자동이체·캘린더 <strong>이중 장치</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">수수료 무시하고 중도</td>
+<td style="text-align: left;">손익분기 후 실행</td>
+</tr>
+<tr>
+<td style="text-align: left;">순서 표가 없음</td>
+<td style="text-align: left;">한 장 표로 <strong>가족 공유</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>실전 체크리스트</h2>
+<ul>
+<li>[ ] 전 대출을 잔액·금리·월납·수수료로 표에 적었다  </li>
+<li>[ ] 연체 위험이 있는 건을 표시했다  </li>
+<li>[ ] 1순위(여유 자금 투입처)를 정했다  </li>
+<li>[ ] 모든 건 최소 상환 자동이체를 확인했다  </li>
+<li>[ ] 1순위 완제 후 다음 순위 이전 규칙을 적어 두었다  </li>
+<li>[ ] 분기 재정렬 날짜를 캘린더에 넣었다  </li>
+</ul>
+<h2>이번 화 전략</h2>
+<p><strong>페르소나 A — 이자 최소화 집중</strong><br />
+금리 우선. 현금·카드론을 먼저 없애고 신용→주담대 순.</p>
+<p><strong>페르소나 B — 관리 피로·건수 많음</strong><br />
+극단 고금리만 먼저 제거 후 잔액 우선. 건수를 줄여 연체 실수를 막는다.</p>
+<p><strong>페르소나 C — 변동 주담대+신용</strong><br />
+신용 고금리를 먼저 줄여 DSR·현금흐름을 확보한 뒤, 주담대는 면제·대환과 연계.</p>
+<h2>확인 권장</h2>
+<ul>
+<li><strong>은행·카드 앱</strong>: 적용금리, 최소상환, 중도상환  </li>
+<li><strong>신용정보원</strong>: 누락된 채무·연체 여부  </li>
+<li><strong>금융감독원</strong>: 다중채무·불법사금융 주의  </li>
+<li><strong>가계부·캘린더</strong>: 상환일 충돌 점검  </li>
+</ul>
+<h2>핵심 정리</h2>
+<ol>
+<li>최소 상환으로 <strong>연체를 막고</strong>, 여유는 <strong>1순위에 집중</strong>한다.  </li>
+<li>금리 순과 잔액 순은 목표가 다르니 <strong>가계에 맞게</strong> 고른다.  </li>
+<li>표는 <strong>가정</strong>이 아닌 본인 금리로 분기마다 갱신한다.</li>
+</ol>
+<h2>관련 회차</h2>
+<ul>
+<li><a href="발행 후 URL">신용점수·카드론·현금서비스 | 대출이자 (8화)</a></li>
+<li><a href="발행 후 URL">중도상환수수료 계산 | 대출이자 (7화)</a></li>
+<li><a href="발행 후 URL">신용대출 이자 줄이기 | 대출이자 (4화)</a></li>
+</ul>
+<h2>면책</h2>
+<p>본 글은 일반 정보 안내용이며, 특정 상환 순서·금융상품을 강제·권유하지 않습니다.<br />
+불법사금융·연체·돌려막기 조장이 아닙니다.<br />
+개인의 약정·수수료·현금흐름에 따라 최적 순서는 달라지므로 공식 금리·스케줄을 확인하시기 바랍니다.</p>
+<p class="footer">Cursor에서 HTML 미리보기 · 발행은 원본 Markdown을 티스토리에 붙여넣으세요.</p>
+</body>
+</html>
