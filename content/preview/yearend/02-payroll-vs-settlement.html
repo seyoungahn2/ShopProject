@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>월급 원천징수와 연말정산 차이 | 연말정산 (2화)</title>
+<style>
+body{font-family:Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif;max-width:760px;margin:32px auto;padding:0 20px 64px;line-height:1.75;color:#1a1a1a;background:#faf9f7}
+h1{font-size:1.55rem;line-height:1.35;margin:0 0 .75rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin-top:1.75rem;border-bottom:1px solid #e5e2da;padding-bottom:.35rem}
+h3{font-size:1.05rem;margin-top:1.25rem}
+p,li{font-size:1rem}
+a{color:#0b5fff}
+.nav{font-size:.9rem;margin-bottom:1.25rem;color:#555}
+.nav a{margin-right:.65rem}
+.badge{display:inline-block;font-size:.75rem;background:#e8f0fe;color:#174ea6;padding:.15rem .45rem;border-radius:4px;margin-bottom:.75rem}
+hr{border:none;border-top:1px solid #ddd;margin:1.5rem 0}
+strong{font-weight:700}
+ul,ol{padding-left:1.25rem}
+li{margin:.28rem 0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}
+th{background:#f0eee8}
+code{font-size:.9em;background:#f0eee8;padding:.1rem .3rem;border-radius:3px}
+pre{background:#f0eee8;padding:1rem;overflow:auto;border-radius:6px}
+.footer{margin-top:2.5rem;font-size:.85rem;color:#777}
+.series-grid{display:grid;gap:1rem;margin:1.5rem 0}
+.card{background:#fff;border:1px solid #e5e2da;border-radius:10px;padding:1rem 1.15rem}
+.card h2{margin-top:0;border:none;padding:0;font-size:1.1rem}
+.card p{margin:.4rem 0 .75rem;color:#555;font-size:.95rem}
+.ep-list{columns:1}
+@media(min-width:640px){.ep-list{columns:1}}
+</style>
+</head>
+<body>
+<p class="nav"><a href="../index.html">전체</a> · <a href="index.html">연말정산 목록</a> · <a href="../../yearend/02-payroll-vs-settlement.md">원본 md</a></p>
+<span class="badge">연말정산 · 티스토리 복사용 미리보기</span>
+<h1>월급 원천징수와 연말정산 차이 | 연말정산 (2화)</h1>
+<p>안녕하세요.<br />
+안대표입니다.</p>
+<p>매달 급여명세서의 “소득세”와 연말정산의 “결정세액”은 같은 세금의 <strong>다른 시점 계산</strong>입니다.<br />
+간이세액표로 대략 떼고, 연말에 공제를 붙여 확정합니다.<br />
+오늘은 그 연결을 풀어서, 왜 어떤 달은 적게 떼이고 연말에 추가납부가 나오는지 정리합니다.</p>
+<h2>30초 요약</h2>
+<ul>
+<li>월급 원천징수는 <strong>간이세액표·공제 신고</strong> 기준의 예상치이고, 연말정산은 <strong>실제 공제·감면</strong> 반영 확정치다.</li>
+<li>부양가족·배우자 공제를 급여에 미리 반영하면 월 세금은 줄지만, 요건 미달이면 <strong>연말에 추가납부</strong>가 날 수 있다.</li>
+<li>“연말 환급을 키우려고” 월 원천을 과도하게 줄이는 것은 <strong>현금흐름·추징 리스크</strong> 측면에서 비추천이다.</li>
+</ul>
+<p>→ <a href="발행 후 URL">연말정산이란, 환급 vs 추가납부 | 연말정산 (1화)</a></p>
+<hr />
+<h2>1. 한 달에 떼는 세금은 ‘가결산’</h2>
+<p>회사는 급여를 줄 때 소득세를 원천징수합니다.<br />
+기준은 흔히 <strong>근로소득 간이세액표</strong>와, 근로자가 제출한 <strong>공제신고서(부양가족 등)</strong> 입니다.</p>
+<p>즉 매월 금액은</p>
+<ul>
+<li>총급여를 12개월로 나눈 감각</li>
+<li>신고된 부양·배우자 등</li>
+<li>(선택에 따라) 상향·하향 조정</li>
+</ul>
+<p>을 반영한 <strong>예상치</strong>에 가깝습니다.</p>
+<p>연말정산은 그해 <strong>실제 총급여·실제 공제</strong>로 다시 계산합니다.<br />
+그래서 “매달 적게 냈는데 연말에 토해내는” 구조가 성립합니다.</p>
+<h2>2. 간이세액표와 공제신고서가 하는 일</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">요소</th>
+<th style="text-align: left;">역할</th>
+<th style="text-align: left;">실무 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>간이세액표</strong></td>
+<td style="text-align: left;">월 급여·공제 가족 수에 따른 대략 세액</td>
+<td style="text-align: left;">회사 급여 프로그램에 내장</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>소득·세액공제신고서</strong></td>
+<td style="text-align: left;">배우자·부양·장애인 등 반영</td>
+<td style="text-align: left;">사실과 다르면 연말 정산에서 뒤집힘</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>원천징수 세액 조정</strong></td>
+<td style="text-align: left;">더 떼기/덜 떼기 요청(회사 정책 범위)</td>
+<td style="text-align: left;">“환급 극대화”용이 아님</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>중도입사·퇴사</strong></td>
+<td style="text-align: left;">근무월 수만큼만 원천</td>
+<td style="text-align: left;">연간 공제와 타이밍이 어긋나기 쉬움</td>
+</tr>
+</tbody>
+</table>
+<p>부양가족을 급여에 올려 두면 <strong>월 실수령</strong>이 늘어납니다.<br />
+다만 그 가족이 공제 요건을 못 채우면, 연말에 <strong>결정세액이 커지며 추가납부</strong>로 돌아옵니다.</p>
+<h2>3. 왜 옆자리와 원천징수가 다르나</h2>
+<p>같은 직급·비슷한 급여라도 월 세금이 다를 수 있습니다.</p>
+<ul>
+<li>배우자·자녀·부모님 공제 신고 여부</li>
+<li>비과세 식대·야간근로수당 등 <strong>비과세 항목</strong> 구성</li>
+<li>상여·인센티브가 몰린 달</li>
+<li>원천징수 세액 <strong>상향 신청</strong> 여부</li>
+<li>중도입사로 근무월이 짧음</li>
+</ul>
+<p>연말정산 결과도 사람마다 다릅니다.<br />
+비교할 때는 “환급액”이 아니라 <strong>총급여 대비 기납부·공제 구성</strong>을 봐야 합니다.</p>
+<h2>4. 가정 예시: 월 적게 떼기 vs 연말 정산</h2>
+<p><strong>가정 예시</strong>입니다. 숫자는 감각용이며, 세율·간이세액은 해당 연도 표를 따르세요.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">시나리오</th>
+<th style="text-align: left;">월 원천 감각</th>
+<th style="text-align: left;">연말 공제</th>
+<th style="text-align: left;">결과 감각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A. 부양 미신고, 공제 실제 큼</td>
+<td style="text-align: left;">월 세금 상대적으로 큼</td>
+<td style="text-align: left;">인적·월세·연금 반영</td>
+<td style="text-align: left;"><strong>환급</strong> 가능성</td>
+</tr>
+<tr>
+<td style="text-align: left;">B. 부양 신고, 요건 미달</td>
+<td style="text-align: left;">월 세금 상대적으로 작음</td>
+<td style="text-align: left;">인적공제 탈락</td>
+<td style="text-align: left;"><strong>추가납부</strong> 가능성</td>
+</tr>
+<tr>
+<td style="text-align: left;">C. 상여 몰림 + 공제 보통</td>
+<td style="text-align: left;">특정 월 원천 급증</td>
+<td style="text-align: left;">연간으로 평탄화</td>
+<td style="text-align: left;">환급·추가 모두 가능</td>
+</tr>
+</tbody>
+</table>
+<p>A가 “착한 환급”, B가 “갑작스러운 고지”로 느껴지지만,<br />
+세금 총액 관점에서는 <strong>미리 내느냐 나중에 내느냐</strong>에 가깝습니다.<br />
+다만 B는 현금흐름 충격이 커서, 많은 사람이 더 고통스럽게 느낍니다.</p>
+<h2>5. 원천징수를 ‘의도적으로’ 조절할 때</h2>
+<p>일부 회사는 원천징수액을 <strong>기준의 80%/100%/120%</strong>처럼 조정하게 둡니다.<br />
+(가능 여부와 방식은 <strong>회사·세법 안내</strong> 확인.)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">선택 감각</th>
+<th style="text-align: left;">장점</th>
+<th style="text-align: left;">주의</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">더 떼기(상향)</td>
+<td style="text-align: left;">연말 추가납부 충격 완화</td>
+<td style="text-align: left;">월 실수령 감소</td>
+</tr>
+<tr>
+<td style="text-align: left;">기준</td>
+<td style="text-align: left;">무난</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">덜 떼기(하향)</td>
+<td style="text-align: left;">월 현금 여유</td>
+<td style="text-align: left;">연말 <strong>추가납부</strong>·추징 체감 커짐</td>
+</tr>
+</tbody>
+</table>
+<p>“환급을 크게 받으려고” 매월 과다 원천하는 것도,<br />
+“실수령을 키우려고” 과소 원천하는 것도<br />
+<strong>정산의 본질을 바꾸지는 않습니다.</strong><br />
+가계 비상금과 연말 현금 버퍼를 보고 고르는 편이 낫습니다.</p>
+<h2>6. 중도입사·퇴사·이직이 꼬이는 지점</h2>
+<ul>
+<li><strong>중도입사</strong>: 근무한 달만 원천 → 연간 공제는 요건에 따라 적용 → 환급·추가 패턴이 기존 직원과 다름</li>
+<li><strong>중도퇴사</strong>: 퇴사 시 연말정산(또는 유사 정산) 후, 이직 회사에서 다시 정산될 수 있음</li>
+<li><strong>겸업·투잡</strong>: 원천이 분산되면 <strong>종합소득 확정신고</strong>가 필요할 수 있음</li>
+</ul>
+<p>이직 시에는 <strong>전 직장 원천징수영수증</strong>을 꼭 챙깁니다.<br />
+새 회사에 제출하지 않으면 공제·기납부 합산이 어긋날 수 있습니다.</p>
+<h2>7. 실무적으로 매달 보면 좋은 것</h2>
+<ol>
+<li>급여명세서의 <strong>소득세·지방소득세</strong> 합계</li>
+<li>부양·배우자 등 <strong>공제 신고 상태</strong>가 사실과 같은지</li>
+<li>상여·인센티브 달의 <strong>원천 급증</strong>을 연간 버퍼로 감안</li>
+<li>11~12월에 연금·기부 등 <strong>세액공제 후보</strong>를 점검 (한도는 해당 연도 확인)</li>
+</ol>
+<p>연말정산은 1월에만 하는 일이 아니라, <strong>매달 원천의 누적</strong>을 마무리하는 일입니다.</p>
+<hr />
+<h2>핵심 숫자</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">요지</th>
+<th style="text-align: left;">확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>간이세액</strong></td>
+<td style="text-align: left;">월 예상 원천</td>
+<td style="text-align: left;">급여명세서·회사 안내</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기납부세액</strong></td>
+<td style="text-align: left;">연간 원천 합계</td>
+<td style="text-align: left;">원천징수영수증</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>결정세액</strong></td>
+<td style="text-align: left;">연말 확정 세금</td>
+<td style="text-align: left;">정산 명세</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>차액</strong></td>
+<td style="text-align: left;">환급 또는 추가납부</td>
+<td style="text-align: left;">기납부 − 결정</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>공제신고</strong></td>
+<td style="text-align: left;">월 원천에 영향</td>
+<td style="text-align: left;">사실·요건과 일치해야 함</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기준 시점</strong></td>
+<td style="text-align: left;"><strong>2026-07</strong> 서술 감각</td>
+<td style="text-align: left;"><strong>해당 과세연도</strong> 재확인</td>
+</tr>
+</tbody>
+</table>
+<h2>흔한 실수 vs 올바른 접근</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">흔한 실수</th>
+<th style="text-align: left;">올바른 접근</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">월 세금 = 최종 세금이라고 믿음</td>
+<td style="text-align: left;">월은 <strong>예상</strong>, 연말은 <strong>확정</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">요건 안 되는 부양을 급여에 올려 실수령 확대</td>
+<td style="text-align: left;">요건 확인 후 신고, 미달 시 <strong>추가납부</strong> 각오</td>
+</tr>
+<tr>
+<td style="text-align: left;">환급 극대화 위해 과다 원천만 고집</td>
+<td style="text-align: left;">가계 현금흐름·버퍼와 균형</td>
+</tr>
+<tr>
+<td style="text-align: left;">이직 시 전 직장 영수증 미제출</td>
+<td style="text-align: left;"><strong>원천징수영수증</strong>을 새 회사에 전달</td>
+</tr>
+<tr>
+<td style="text-align: left;">상여 달 세금 급증을 “오류”로만 봄</td>
+<td style="text-align: left;">연간 누적으로 해석</td>
+</tr>
+</tbody>
+</table>
+<h2>실전 체크리스트</h2>
+<ul>
+<li>[ ] 최근 급여명세서에서 소득세·지방세 <strong>원천 금액</strong>을 확인했다</li>
+<li>[ ] 회사에 올린 <strong>부양·배우자 공제</strong>가 사실과 같은지 점검했다</li>
+<li>[ ] 원천징수 <strong>상향/하향</strong> 옵션이 있는지 인사·총무에 물었다</li>
+<li>[ ] 중도입사·이직 이력이 있으면 <strong>전 직장 원천징수영수증</strong>을 확보했다</li>
+<li>[ ] 상여·인센티브가 있는 달의 세금 변동을 메모했다</li>
+<li>[ ] “연말 환급”보다 <strong>정확한 정산·현금 버퍼</strong>를 목표로 적었다</li>
+<li>[ ] 한도·세율은 <strong>해당 과세연도 홈택스</strong>에서 본다고 표시했다</li>
+</ul>
+<h2>이번 화 전략</h2>
+<p><strong>초보</strong>: 급여명세서와 원천징수영수증만 나란히 놓고, <strong>월 합계 ≈ 기납부</strong>인지 감각을 익힌다. 용어가 익숙해지면 공제 화가 수월하다.</p>
+<p><strong>직장인(실수령 중시)</strong>: 부양 공제로 월 세금을 줄였다면, 연말에 <strong>요건 증빙</strong>이 준비돼 있는지 11월에 한 번 더 본다.</p>
+<p><strong>부부 맞벌이</strong>: 누가 부양을 급여에 올렸는지 공유한다. 양쪽이 같은 가족을 올리면 <strong>중복</strong>으로 한쪽에 추가납부가 날 수 있다.</p>
+<h2>확인 권장</h2>
+<ul>
+<li><strong>국세청</strong>: 근로소득 간이세액표, 원천징수 안내</li>
+<li><strong>홈택스</strong>: 연말정산 간소화, 지급명세서·원천징수 관련 조회</li>
+<li><strong>회사 인사/급여 담당</strong>: 공제신고서·원천 세액 조정 절차</li>
+</ul>
+<h2>핵심 정리</h2>
+<ol>
+<li>월급 원천은 <strong>간이·신고 기준 예상치</strong>, 연말정산은 <strong>실제 공제 반영 확정치</strong>다.</li>
+<li>월 실수령을 키우는 공제 신고는, 요건 미달 시 <strong>추가납부</strong>로 돌아온다.</li>
+<li>이직·상여·원천 조정은 기납부 누적을 바꾸므로 <strong>영수증·명세</strong>로 추적한다.</li>
+</ol>
+<hr />
+<h2>관련 회차</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">화</th>
+<th style="text-align: left;">제목</th>
+<th style="text-align: left;">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">연말정산이란, 환급 vs 추가납부</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 1화</a></td>
+</tr>
+</tbody>
+</table>
+<h2>면책</h2>
+<p>본 글은 일반 정보 정리이며 <strong>세무 자문이 아닙니다.</strong><br />
+원천징수·간이세액·공제 요건은 과세연도와 회사 실무에 따라 달라지므로, <strong>해당 과세연도 국세청·홈택스</strong> 및 급여 담당 안내를 확인하세요.</p>
+<p>감사합니다.</p>
+<p class="footer">Cursor에서 HTML 미리보기 · 발행은 원본 Markdown을 티스토리에 붙여넣으세요.</p>
+</body>
+</html>

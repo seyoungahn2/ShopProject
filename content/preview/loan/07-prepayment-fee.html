@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중도상환수수료 계산 | 대출이자 (7화)</title>
+<style>
+body{font-family:Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif;max-width:760px;margin:32px auto;padding:0 20px 64px;line-height:1.75;color:#1a1a1a;background:#faf9f7}
+h1{font-size:1.55rem;line-height:1.35;margin:0 0 .75rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin-top:1.75rem;border-bottom:1px solid #e5e2da;padding-bottom:.35rem}
+h3{font-size:1.05rem;margin-top:1.25rem}
+p,li{font-size:1rem}
+a{color:#0b5fff}
+.nav{font-size:.9rem;margin-bottom:1.25rem;color:#555}
+.nav a{margin-right:.65rem}
+.badge{display:inline-block;font-size:.75rem;background:#e8f0fe;color:#174ea6;padding:.15rem .45rem;border-radius:4px;margin-bottom:.75rem}
+hr{border:none;border-top:1px solid #ddd;margin:1.5rem 0}
+strong{font-weight:700}
+ul,ol{padding-left:1.25rem}
+li{margin:.28rem 0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}
+th{background:#f0eee8}
+code{font-size:.9em;background:#f0eee8;padding:.1rem .3rem;border-radius:3px}
+pre{background:#f0eee8;padding:1rem;overflow:auto;border-radius:6px}
+.footer{margin-top:2.5rem;font-size:.85rem;color:#777}
+.series-grid{display:grid;gap:1rem;margin:1.5rem 0}
+.card{background:#fff;border:1px solid #e5e2da;border-radius:10px;padding:1rem 1.15rem}
+.card h2{margin-top:0;border:none;padding:0;font-size:1.1rem}
+.card p{margin:.4rem 0 .75rem;color:#555;font-size:.95rem}
+.ep-list{columns:1}
+@media(min-width:640px){.ep-list{columns:1}}
+</style>
+</head>
+<body>
+<p class="nav"><a href="../index.html">전체</a> · <a href="index.html">대출이자 목록</a> · <a href="../../loan/07-prepayment-fee.md">원본 md</a></p>
+<span class="badge">대출이자 · 티스토리 복사용 미리보기</span>
+<h1>중도상환수수료 계산 | 대출이자 (7화)</h1>
+<p>안녕하세요.<br />
+안대표입니다.</p>
+<h2>30초 요약</h2>
+<ul>
+<li>중도상환수수료는 “갚지 말라”가 아니라 <strong>언제·얼마나 갚을지</strong>의 비용이다.</li>
+<li>손익분기는 <strong>절감 이자 ≥ 수수료(+기타비용)</strong>로 본다.</li>
+<li>면제 시점·계산식은 상품마다 다르므로 <strong>약정서 조항</strong>이 기준이다.</li>
+</ul>
+<p>이전 글: <a href="발행 후 URL">대환대출 판단 기준 | 대출이자 (6화)</a></p>
+<hr />
+<h2>1. 중도상환수수료가 있는 이유(실무 감각)</h2>
+<p>금융회사는 약정 기간의 이자 현금흐름을 전제로 상품을 짠다.<br />
+중도에 원금을 크게 갚으면 그 전제가 바뀌어, 계약에 따라 <strong>수수료</strong>가 붙을 수 있다.<br />
+소비자 입장에서는 비용이지만, <strong>높은 이자를 오래 내는 비용</strong>과 비교해야 한다.</p>
+<p>핵심: 수수료가 있다고 해서 중도상환이 항상 손해는 아니다.</p>
+<h2>2. 약정에서 찾을 항목</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">확인 내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>부과 여부</strong></td>
+<td style="text-align: left;">전액/일부, 상품 유형</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>요율</strong></td>
+<td style="text-align: left;">잔액 또는 상환액의 몇 %</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기간</strong></td>
+<td style="text-align: left;">실행 후 N년 이내 등</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>체감·면제</strong></td>
+<td style="text-align: left;">경과 연수에 따라 요율 하락·면제</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>제외</strong></td>
+<td style="text-align: left;">일부 금액·특정 사유 면제 여부</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>계산 시점</strong></td>
+<td style="text-align: left;">상환 신청일 잔액 기준 등</td>
+</tr>
+</tbody>
+</table>
+<p>앱 요약 화면만 보지 말고, <strong>상품설명서·약관 조항</strong>을 저장해 둔다.</p>
+<h2>3. 단순 손익분기 (가정)</h2>
+<pre><code>연 이자 절감 ≈ 중도상환 원금 × 적용금리
+(더 정확히는 스케줄상 이자 감소분을 사용)
+순효과 ≈ 이자 절감 − 중도상환수수료 − 기타비용
+</code></pre>
+<p><strong>가정 예시</strong><br />
+- 상환액 1,000만 원<br />
+- 적용금리 <strong>가정 연 6%</strong> → 단순 연 이자 감각 <strong>약 60만 원</strong><br />
+- 수수료 <strong>가정 0.7%</strong> → <strong>7만 원</strong><br />
+- 1년만 봐도 단순 비교상 중도상환이 유리해 보일 수 있음  </p>
+<p>금리가 낮고 수수료가 높으며, 곧 면제라면 <strong>면제일을 기다리는</strong> 편이 나을 수 있다.</p>
+<h2>4. 대환과 묶을 때</h2>
+<p>대환은 “기존 중도상환 + 신규 실행”이다.<br />
+수수료는 대환 비용의 핵심 항목이다.</p>
+<p>판단 순서:</p>
+<ol>
+<li>기존 수수료 금액·면제까지 남은 기간  </li>
+<li>신규 금리로 얻는 월·연 절감  </li>
+<li>면제 대기 vs 즉시 대환의 <strong>순현재 감각</strong>(복잡하면 표로 두 시나리오)  </li>
+<li>대기 중 금리·한도 조건이 나빠질 리스크(확정 불가 → 여유 있게)</li>
+</ol>
+<p>“며칠 차이로 수수료가 크게 달라지는” 경우가 있으니 <strong>날짜를 숫자로</strong> 적는다.</p>
+<h2>5. 일부 상환 전략</h2>
+<p>전액이 아니어도 된다.<br />
+여유 자금이 생기면:</p>
+<ul>
+<li>수수료가 낮은 구간·상품부터  </li>
+<li>또는 <strong>실효 금리가 높은</strong> 대출부터  </li>
+<li>수수료 민감도를 계산해 <strong>상환 단위</strong>를 정함  </li>
+</ul>
+<p>주담대처럼 수수료 부담이 큰 상품은, 면제 이후 상여·저축으로 몰아서 갚는 식의 계획이 흔하다.<br />
+개인 상황은 다르다. 공식은 같고 입력값만 본인 약정이다.</p>
+<h2>6. 면제일을 기다리는 판단</h2>
+<p>면제까지 남은 기간이 짧다면, “지금 갚기 vs 기다리기”를 표로 적는다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">시나리오</th>
+<th style="text-align: left;">계산</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">지금 상환</td>
+<td style="text-align: left;">수수료 + (거의 없는) 잔여 단기 이자</td>
+</tr>
+<tr>
+<td style="text-align: left;">면제 후 상환</td>
+<td style="text-align: left;">수수료 0 + 대기 기간 동안의 이자</td>
+</tr>
+<tr>
+<td style="text-align: left;">선택</td>
+<td style="text-align: left;">둘 중 <strong>총비용이 작은 쪽</strong></td>
+</tr>
+</tbody>
+</table>
+<p>대기 중에도 최소 상환·연체 방지는 유지한다.<br />
+면제일을 넘겼다고 자동으로 상환되지 않으니, <strong>알림 후 실행</strong>이 필요하다.</p>
+<h2>7. 견적을 받는 실무 멘트</h2>
+<p>고객센터·앱 상담 시 확인할 질문 예:</p>
+<ol>
+<li>오늘 기준 상환액 ○○만 원일 때 <strong>수수료 원화</strong>는?  </li>
+<li>면제까지 <strong>남은 일수·조건</strong>은?  </li>
+<li>일부 상환 최소 금액·횟수 제한은?  </li>
+<li>상환 후 <strong>다음 회차 이자·스케줄</strong> 변경은?  </li>
+<li>대환 목적이면 기존 상환과 신규 실행 <strong>당일 처리</strong> 가능한가?  </li>
+</ol>
+<p>답변은 녹취·채팅·화면 캡처로 남긴다. 구두 감만으로 이체하지 않는다.</p>
+<h2>핵심 숫자 (가정 예시)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">가정 예시</th>
+<th style="text-align: left;">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">수수료율</td>
+<td style="text-align: left;"><strong>가정 0%~1%대</strong></td>
+<td style="text-align: left;">상품·경과기간별</td>
+</tr>
+<tr>
+<td style="text-align: left;">면제</td>
+<td style="text-align: left;">실행 후 <strong>N년</strong> 등</td>
+<td style="text-align: left;">약정 확인</td>
+</tr>
+<tr>
+<td style="text-align: left;">손익 감각</td>
+<td style="text-align: left;">이자절감 vs 수수료</td>
+<td style="text-align: left;">1년·잔여기간 둘 다</td>
+</tr>
+<tr>
+<td style="text-align: left;">일부 상환</td>
+<td style="text-align: left;">최소 단위·횟수 제한 가능</td>
+<td style="text-align: left;">앱·창구 확인</td>
+</tr>
+<tr>
+<td style="text-align: left;">대환 시</td>
+<td style="text-align: left;">수수료=핵심 비용</td>
+<td style="text-align: left;">6화 프레임과 연결</td>
+</tr>
+</tbody>
+</table>
+<p>모든 %는 <strong>가정</strong>이다. 실제 조항을 따른다.</p>
+<h2>흔한 실수 vs 올바른 접근</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">흔한 실수</th>
+<th style="text-align: left;">올바른 접근</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">수수료 있다는 말만 듣고 포기</td>
+<td style="text-align: left;"><strong>이자 절감과 비교</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">면제일을 캘린더에 안 넣음</td>
+<td style="text-align: left;">면제 <strong>D-day</strong> 알림</td>
+</tr>
+<tr>
+<td style="text-align: left;">전액만 생각</td>
+<td style="text-align: left;">일부 상환·분할 전략</td>
+</tr>
+<tr>
+<td style="text-align: left;">대환 광고만 보고 실행</td>
+<td style="text-align: left;">수수료 포함 <strong>순절감</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">계산식을 앱과 다르게 짐작</td>
+<td style="text-align: left;"><strong>고객센터 견적</strong> 요청</td>
+</tr>
+</tbody>
+</table>
+<h2>실전 체크리스트</h2>
+<ul>
+<li>[ ] 약정에서 중도상환수수료 <strong>요율·기간·면제</strong>를 확인했다  </li>
+<li>[ ] 오늘 상환 시 수수료 <strong>원화 견적</strong>을 받아 보았다  </li>
+<li>[ ] 동일 금액의 <strong>연 이자 감각</strong>과 비교했다  </li>
+<li>[ ] 면제까지 남은 일수를 적었다  </li>
+<li>[ ] 대환이라면 신규 절감 − 수수료를 계산했다  </li>
+<li>[ ] 일부 상환 가능 여부·최소 금액을 확인했다  </li>
+</ul>
+<h2>이번 화 전략</h2>
+<p><strong>페르소나 A — 면제 3개월 전, 여유 자금 있음</strong><br />
+수수료와 3개월치 이자를 비교한다. 차이가 미미하면 면제 후, 크면 일부만이라도 검토.</p>
+<p><strong>페르소나 B — 대환 진행 중</strong><br />
+기존 수수료 견적을 먼저 받고, 신규 확정 금리와 같은 표에 넣는다.</p>
+<p><strong>페르소나 C — 고금리 신용 + 저금리 주담대</strong><br />
+보통 고금리 쪽 상환 우선. 주담대 수수료가 크면 주담대는 면제·소액 위주로.</p>
+<h2>확인 권장</h2>
+<ul>
+<li><strong>은행 앱·고객센터</strong>: 중도상환 시뮬·수수료 견적  </li>
+<li><strong>약정서·상품설명서</strong>: 조항 원문  </li>
+<li><strong>금융감독원</strong>: 중도상환수수료 관련 소비자 안내(해당 자료)  </li>
+<li><strong>신용정보</strong>: 상환 후 잔액·상태 반영 여부 추후 확인  </li>
+</ul>
+<h2>핵심 정리</h2>
+<ol>
+<li>중도상환수수료는 <strong>이자 절감과 비교할 비용</strong>이다.  </li>
+<li>면제 시점·요율은 상품마다 다르니 <strong>약정·견적</strong>이 기준이다.  </li>
+<li>대환·일부 상환 모두 <strong>같은 손익 프레임</strong>으로 본다.</li>
+</ol>
+<h2>관련 회차</h2>
+<ul>
+<li><a href="발행 후 URL">대환대출 판단 기준 | 대출이자 (6화)</a></li>
+<li><a href="발행 후 URL">신용대출 이자 줄이기 | 대출이자 (4화)</a></li>
+</ul>
+<h2>면책</h2>
+<p>본 글은 일반 정보 안내용이며, 특정 상품의 중도상환·대환을 권유하지 않습니다.<br />
+불법사금융·연체 조장이 아닙니다.<br />
+수수료 계산은 약정과 금융회사 시스템에 따르므로 반드시 공식 견적으로 확인하시기 바랍니다.</p>
+<p class="footer">Cursor에서 HTML 미리보기 · 발행은 원본 Markdown을 티스토리에 붙여넣으세요.</p>
+</body>
+</html>

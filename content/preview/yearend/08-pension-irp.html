@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>연금저축·IRP 세액공제 | 연말정산 (8화)</title>
+<style>
+body{font-family:Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif;max-width:760px;margin:32px auto;padding:0 20px 64px;line-height:1.75;color:#1a1a1a;background:#faf9f7}
+h1{font-size:1.55rem;line-height:1.35;margin:0 0 .75rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin-top:1.75rem;border-bottom:1px solid #e5e2da;padding-bottom:.35rem}
+h3{font-size:1.05rem;margin-top:1.25rem}
+p,li{font-size:1rem}
+a{color:#0b5fff}
+.nav{font-size:.9rem;margin-bottom:1.25rem;color:#555}
+.nav a{margin-right:.65rem}
+.badge{display:inline-block;font-size:.75rem;background:#e8f0fe;color:#174ea6;padding:.15rem .45rem;border-radius:4px;margin-bottom:.75rem}
+hr{border:none;border-top:1px solid #ddd;margin:1.5rem 0}
+strong{font-weight:700}
+ul,ol{padding-left:1.25rem}
+li{margin:.28rem 0}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid #ddd;padding:.45rem .55rem;text-align:left;vertical-align:top}
+th{background:#f0eee8}
+code{font-size:.9em;background:#f0eee8;padding:.1rem .3rem;border-radius:3px}
+pre{background:#f0eee8;padding:1rem;overflow:auto;border-radius:6px}
+.footer{margin-top:2.5rem;font-size:.85rem;color:#777}
+.series-grid{display:grid;gap:1rem;margin:1.5rem 0}
+.card{background:#fff;border:1px solid #e5e2da;border-radius:10px;padding:1rem 1.15rem}
+.card h2{margin-top:0;border:none;padding:0;font-size:1.1rem}
+.card p{margin:.4rem 0 .75rem;color:#555;font-size:.95rem}
+.ep-list{columns:1}
+@media(min-width:640px){.ep-list{columns:1}}
+</style>
+</head>
+<body>
+<p class="nav"><a href="../index.html">전체</a> · <a href="index.html">연말정산 목록</a> · <a href="../../yearend/08-pension-irp.md">원본 md</a></p>
+<span class="badge">연말정산 · 티스토리 복사용 미리보기</span>
+<h1>연금저축·IRP 세액공제 | 연말정산 (8화)</h1>
+<p>안녕하세요.<br />
+안대표입니다.</p>
+<p>연금저축과 IRP는 연말정산에서 <strong>세액공제 체감이 큰 축</strong>입니다.<br />
+다만 납입 한도·공제율·중도인출·퇴직금 이전 규칙이 겹칩니다.<br />
+오늘은 “얼마나 넣으면 공제가 되나”보다 <strong>한도·세율·출구</strong>를 안전하게 잡는 법을 정리합니다.</p>
+<h2>30초 요약</h2>
+<ul>
+<li>연금저축·IRP 납입은 흔히 <strong>세액공제</strong> 대상이며, 공제율은 소득에 따라 <strong>16.5% / 13.2%</strong> 구간으로 안내되는 경우가 많다 (반드시 해당 연도 확인).</li>
+<li>세액공제 가능한 납입 한도는 연금저축·IRP <strong>합산</strong>으로 잡는 틀이 흔하며, 총 납입·계좌 한도와 혼동하면 안 된다.</li>
+<li>공제만 보고 중도인출하면 <strong>추징·기타소득</strong> 이슈가 생길 수 있어, 급전은 비상금·ISA 원금 등과 역할을 나눈다.</li>
+</ul>
+<p>→ <a href="발행 후 URL">신용카드·체크·현금영수증 | 연말정산 (7화)</a><br />
+→ <a href="발행 후 URL">연말정산이란, 환급 vs 추가납부 | 연말정산 (1화)</a></p>
+<hr />
+<h2>1. 계좌 역할부터</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">계좌</th>
+<th style="text-align: left;">연말정산</th>
+<th style="text-align: left;">기타</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>연금저축</strong></td>
+<td style="text-align: left;">납입액 세액공제 후보</td>
+<td style="text-align: left;">보험·신탁·펀드 형태</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>IRP</strong></td>
+<td style="text-align: left;">납입액 세액공제 후보</td>
+<td style="text-align: left;">퇴직금 수령 계좌로도 사용</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ISA</strong></td>
+<td style="text-align: left;"><strong>가입·납입만으로 연말정산 세액공제 없음</strong></td>
+<td style="text-align: left;">만기 후 연금 이전 시 <strong>추가</strong> 세액공제 후보(별도 요건)</td>
+</tr>
+</tbody>
+</table>
+<p>ISA를 연금 대신 넣으면 “연말정산 환급”이 바로 생기지 않습니다.<br />
+역할이 다릅니다.</p>
+<h2>2. 세액공제 틀 (흔히 쓰는 숫자)</h2>
+<p>아래는 <strong>실무에서 자주 언급되는 틀</strong>입니다.<br />
+개정·특례가 있으면 달라지므로 <strong>해당 과세연도 홈택스·금융사 안내</strong>로 확정하세요.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">흔한 안내 감각</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>세액공제 대상 납입 한도</strong></td>
+<td style="text-align: left;">연금저축+IRP 합산으로 <strong>최대 일정 금액</strong>(흔히 900만 원 전후로 논의)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>연금저축만</strong></td>
+<td style="text-align: left;">그 안에서 한도가 더 작게 잡히는 구조가 흔함</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>공제율</strong></td>
+<td style="text-align: left;">총급여 <strong>5,500만 원 이하</strong> 등 → <strong>16.5%</strong>(지방세 포함 감각) / 초과 → <strong>13.2%</strong> 구간</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>효과 가정 예시</strong></td>
+<td style="text-align: left;">한도까지 납입 × 공제율 ≈ 세액 감소 (지방세 포함 여부는 안내 확인)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>가정 예시</strong>: 세액공제 대상 납입 600만 원, 공제율 16.5%라면 세액공제 약 99만 원 감각.<br />
+실제 적용·한도·지방세는 홈택스 결과로 검증합니다.</p>
+<h2>3. 납입 한도와 ‘총 납입 한도’를 섞지 말 것</h2>
+<p>금융사 앱에는</p>
+<ul>
+<li>연금계좌 <strong>연간 납입 한도</strong>(세법상 더 큰 한도가 있는 경우)</li>
+<li><strong>세액공제 한도</strong></li>
+</ul>
+<p>가 함께 보입니다.<br />
+공제를 못 받아도 납입은 가능할 수 있지만, <strong>연말정산 환급으로 이어지는 구간은 세액공제 한도까지</strong>입니다.</p>
+<p>IRP에 퇴직금을 이전하는 경우, <strong>별도 입금·운용 규칙</strong>이 붙습니다.<br />
+“내가 추가로 넣는 자기부담금”과 “퇴직금”을 구분해 보세요.</p>
+<h2>4. 누가 얼마나 — 소득 구간과 맞벌이</h2>
+<ul>
+<li>공제율 16.5% 구간에 있는 배우자에게 납입을 몰아주면 유리한 <strong>가정</strong>이 성립할 수 있음</li>
+<li>다만 <strong>각자 소득·한도</strong>가 있고, 한쪽만 과도 납입 시 가계 유동성이 깨짐</li>
+<li>총급여가 경계(예: 5,500만 근처)면, <strong>해당 연도 확정 급여</strong>를 본 뒤 12월 납입액을 조절</li>
+</ul>
+<p>경계 구간은 상여·인센티브로 넘어갈 수 있으니, 11월에 급여 누적을 확인합니다.</p>
+<h2>5. 중도인출·해지 — 공제의 반대편</h2>
+<p>세액공제를 받은 뒤 중도인출·해지하면</p>
+<ul>
+<li>세액공제분 <strong>추징</strong></li>
+<li><strong>기타소득세</strong> 등</li>
+</ul>
+<p>이 붙는 구조가 일반적입니다.<br />
+(예외: 법령상 부득이한 사유 등은 해당 연도 문구 확인.)</p>
+<p>그래서 연금·IRP는</p>
+<ol>
+<li><strong>5년 이상 비상금·단기 목적 자금과 분리</strong></li>
+<li>공제 한도만 채우려고 <strong>생활비를 올인하지 않음</strong></li>
+<li>급전은 예금·ISA 원금 인출 등 <strong>다른 버킷</strong>과 비교</li>
+</ol>
+<p>이 순서입니다.</p>
+<h2>6. ISA 만기 자금 → 연금 이전</h2>
+<p>ISA를 만기(의무기간 충족 등 요건) 후 연금저축·IRP로 이전하면,<br />
+이전액의 일정 비율(흔히 <strong>10%, 최대 300만 원</strong> 감각)이 <strong>추가 세액공제</strong> 후보로 안내되는 경우가 있습니다.<br />
+기한은 흔히 <strong>60일</strong> 이내 전환 절차입니다.</p>
+<p>이건 “ISA를 열기만 하면 연말정산 공제”가 아니라,<br />
+<strong>만기 출구 전략</strong>입니다.<br />
+개설만으로 연말정산 세액공제가 생기지는 않습니다.</p>
+<h2>7. 12월 납입 실무</h2>
+<ul>
+<li>금융사 <strong>마감 영업일·영업시간</strong> 확인 (당일 이체 지연)</li>
+<li>카드 납입·자동이체가 과세연도에 귀속되는지 확인</li>
+<li>납입증명·간소화 반영까지 시차 가능 → PDF 증빙 확보</li>
+<li>한도 초과 납입은 공제에 안 들어가도 <strong>운용은 가능</strong>할 수 있음 — 목적 재확인</li>
+</ul>
+<p>회사 마감보다 <strong>금융사 입금 마감</strong>이 더 빠를 수 있습니다.</p>
+<hr />
+<h2>핵심 숫자</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">흔한 안내 감각</th>
+<th style="text-align: left;">확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>공제율</strong></td>
+<td style="text-align: left;"><strong>16.5% / 13.2%</strong> (소득 구간)</td>
+<td style="text-align: left;"><strong>해당 과세연도 홈택스</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>세액공제 납입 한도</strong></td>
+<td style="text-align: left;">연금+IRP 합산 <strong>흔히 900만 전후</strong></td>
+<td style="text-align: left;">홈택스·금융사</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>연금저축 단독 한도</strong></td>
+<td style="text-align: left;">합산보다 작게 잡히는 경우</td>
+<td style="text-align: left;">안내문</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ISA 이전 추가공제</strong></td>
+<td style="text-align: left;">이전액 <strong>10%</strong>, 최대 <strong>300만</strong> 감각</td>
+<td style="text-align: left;">요건·60일</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>중도인출</strong></td>
+<td style="text-align: left;">추징·기타소득 리스크</td>
+<td style="text-align: left;">세법·약관</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기준</strong></td>
+<td style="text-align: left;"><strong>2026-07</strong> 서술</td>
+<td style="text-align: left;"><strong>미확정</strong> 개정은 계획 제외</td>
+</tr>
+</tbody>
+</table>
+<h2>흔한 실수 vs 올바른 접근</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">흔한 실수</th>
+<th style="text-align: left;">올바른 접근</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ISA 가입 = 연말정산 세액공제</td>
+<td style="text-align: left;">ISA는 <strong>가입만으로 세액공제 없음</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">공제율·한도를 작년 기억으로 고정</td>
+<td style="text-align: left;"><strong>해당 과세연도</strong> 수치로 재확인</td>
+</tr>
+<tr>
+<td style="text-align: left;">생활비까지 한도 채우기</td>
+<td style="text-align: left;">비상금 분리 후 <strong>여유분만</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">중도인출을 예금처럼 사용</td>
+<td style="text-align: left;">추징 감수 여부 계산 후 결정</td>
+</tr>
+<tr>
+<td style="text-align: left;">12/31 밤 이체</td>
+<td style="text-align: left;">금융사 <strong>마감일</strong>에 여유 두고 납입</td>
+</tr>
+</tbody>
+</table>
+<h2>실전 체크리스트</h2>
+<ul>
+<li>[ ] 연금저축·IRP 잔여 <strong>세액공제 한도</strong>를 앱에서 확인했다</li>
+<li>[ ] 내 소득 구간의 <strong>공제율(16.5% vs 13.2% 감각)</strong>을 해당 연도 기준으로 봤다</li>
+<li>[ ] 맞벌이라면 누가 한도를 채울지 합의했다</li>
+<li>[ ] 중도인출 가능성이 있는 자금을 연금에 넣지 않기로 정했다</li>
+<li>[ ] ISA와 연금의 역할을 분리해 메모했다</li>
+<li>[ ] 12월 납입 시 금융사 마감·증빙을 캘린더에 넣었다</li>
+<li>[ ] 최종 공제액은 홈택스 미리보기로 검증한다고 표시했다</li>
+</ul>
+<h2>이번 화 전략</h2>
+<p><strong>초보</strong>: 소액이라도 <strong>자동이체</strong>로 연간 한도의 일부만 채운다. 공제율 숫자보다 “중도인출하지 않을 돈”인지가 먼저다.</p>
+<p><strong>직장인(환급 체감)</strong>: 11월에 한도 잔여를 보고, 상여·성과급의 일부만 납입한다. 전액을 올인하지 않는다.</p>
+<p><strong>부부</strong>: 16.5% 구간에 있는 쪽 한도를 우선 검토하되, 가계 현금흐름·IRP 퇴직금 계획과 맞춘다.</p>
+<h2>확인 권장</h2>
+<ul>
+<li><strong>국세청·홈택스</strong>: 연금계좌 세액공제 한도·공제율</li>
+<li><strong>금융회사</strong>: 납입한도, 납입증명, 중도인출·이전 절차</li>
+<li><strong>금융감독원·금융위</strong>: 연금·IRP 소비자 안내</li>
+</ul>
+<h2>핵심 정리</h2>
+<ol>
+<li>연금저축·IRP는 <strong>세액공제 한도·공제율</strong>을 홈택스로 확정한 뒤 납입한다.</li>
+<li>ISA 개설만으로 연말정산 세액공제는 생기지 않는다.</li>
+<li>공제 받은 돈의 <strong>출구(인출·해지)</strong>에는 추징 리스크가 따른다.</li>
+</ol>
+<hr />
+<h2>관련 회차</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">화</th>
+<th style="text-align: left;">제목</th>
+<th style="text-align: left;">URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">연말정산이란, 환급 vs 추가납부</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 1화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">월급 원천징수와 연말정산 차이</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 2화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">인적공제·기본공제 함정</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 3화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">보장성 보험료 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 4화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">의료비·교육비 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 5화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">월세·전세·주택자금 공제</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 6화</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">신용카드·체크·현금영수증</td>
+<td style="text-align: left;"><a href="발행 후 URL">연말정산 7화</a></td>
+</tr>
+</tbody>
+</table>
+<h2>면책</h2>
+<p>본 글은 일반 정보 정리이며 <strong>세무·투자 권유가 아닙니다.</strong><br />
+연금·IRP 한도·공제율·추징 규정은 과세연도와 상품에 따라 달라지므로, <strong>해당 과세연도 국세청·홈택스</strong> 및 금융사 안내를 확인하세요.</p>
+<p>감사합니다.</p>
+<p class="footer">Cursor에서 HTML 미리보기 · 발행은 원본 Markdown을 티스토리에 붙여넣으세요.</p>
+</body>
+</html>
