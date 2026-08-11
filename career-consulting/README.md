@@ -10,6 +10,7 @@
 | [02-consulting.md](./02-consulting.md) | 강점·리스크·지원 트랙·JD 해석·이력서 전략 |
 | [03-woowayouths-R2607037.md](./03-woowayouths-R2607037.md) | 우아한청년들 라이더 교육 기획/운영 공고 맞춤 해석 |
 | [04-cover-letter-R2607037.md](./04-cover-letter-R2607037.md) | 자기소개서 2문항 초안 (복붙·수정용) |
+| [05-career-statement.md](./05-career-statement.md) | 경력기술서 (프로젝트 5건 정리본) |
 
 ## 사용 방법
 
